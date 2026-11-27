@@ -31,7 +31,7 @@
   "fullWorkflow": "Bekijk de werkwijze",
   "prototypeReview": {
     "label": "Prototype-UI",
-    "title": "Probeer een functie uit met de klant.",
+    "title": "Prototype, ontwerp en documentatie naast elkaar",
     "intro": "Laat de klant een taak uitproberen. Naast het werkende scherm lees je wat jullie in de spec hebben afgesproken. Kom je iets tegen dat je wilt bespreken? Deel de link en je collega ziet hetzelfde scherm met dezelfde voorbeeldgegevens.",
     "setup": "Gebruik de prototype-UI in je project",
     "imageAlt": "De reviewomgeving met een productvergelijking op telefoonformaat en de bijbehorende designspec ernaast.",

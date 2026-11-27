@@ -31,7 +31,7 @@
   "fullWorkflow": "Explore the workflow",
   "prototypeReview": {
     "label": "Prototype UI",
-    "title": "Try a feature with the client.",
+    "title": "Prototype, design and documentation side by side",
     "intro": "Ask the client to try a task. The spec sits beside the working screen so you can check what you agreed. See something worth discussing? Share the link and a colleague can open the same screen with the same sample data.",
     "setup": "Use the prototype UI in your project",
     "imageAlt": "The review environment showing a product comparison at phone size with its design spec alongside it.",
