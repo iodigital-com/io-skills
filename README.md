@@ -57,6 +57,6 @@ Both tutorials link each worked prompt to its result in the [Wobble Wheel kidsâ€
 
 `pnpm build` validates paired content and exports the Next.js website to `out/`.
 
-The [production workflow](.github/workflows/deploy.yml) runs the prototype tests on pushes to `main`, then deploys to [io-skills on the Prophets Vercel team](https://vercel.com/prophets/io-skills). Vercel builds the site from the project root with Node.js 22 and `pnpm build`.
+The [production workflow](.github/workflows/deploy.yml) runs the prototype tests on pushes to `main`, then deploys to [io-skills on the Prophets Vercel team](https://vercel.com/prophets/io-skills). Vercel builds the site from the project root with Node.js 22 and `pnpm build`. The live site is available in [Dutch](https://io-skills.vercel.app/nl/) and [English](https://io-skills.vercel.app/en/).
 
 GitHub Actions reads the team and project IDs from the repository variables `VERCEL_ORG_ID` and `VERCEL_PROJECT_ID`. Store a Vercel token scoped to this project in the Actions secret `VERCEL_TOKEN`. To retry a deployment, rerun the workflow on `main`.

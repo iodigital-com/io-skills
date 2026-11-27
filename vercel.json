@@ -1,0 +1,15 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "redirects": [
+    {
+      "source": "/prototypes/bike-shop/index.html",
+      "destination": "/prototypes/bike-shop/",
+      "permanent": true
+    },
+    {
+      "source": "/prototypes/bike-shop/shop/index.html",
+      "destination": "/prototypes/bike-shop/shop/",
+      "permanent": true
+    }
+  ]
+}
