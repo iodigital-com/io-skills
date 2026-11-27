@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="dark">
+  <title>Wobble Wheel · Prototype review</title>
+  <link rel="icon" href="./review-mark.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="./shell.css">
+  <script type="module" src="./shell.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main" data-text="skip">Skip to content</a>
+  <header class="mast">
+    <div class="mast-inner">
+      <a class="brand" id="home" href="./index.html">
+        <img src="./review-mark.svg" alt="" width="30" height="30">
+        <span data-text="review">Prototype review</span>
+        <span id="project-name">Wobble Wheel</span>
+      </a>
+      <nav data-aria="workspace">
+        <a href="./index.html" id="overview-link" data-text="overview">Overview</a>
+        <select id="screen" data-aria="quickPick"></select>
+        <a id="tutorial-link" href="/nl/guides/new-project/" data-text="tutorial">Back to tutorial</a>
+        <a id="language-link" href="?lang=en" aria-label="Read documentation in English">Docs · EN</a>
+      </nav>
+    </div>
+  </header>
+  <main id="main" tabindex="-1">
+    <section id="overview" class="overview wrap" aria-labelledby="overview-title" hidden>
+      <div class="overview-head">
+        <div><p class="kicker" data-text="review">Prototype review</p><h1 id="overview-title"></h1></div>
+        <p id="project-summary" class="summary"></p>
+      </div>
+      <div id="features"></div>
+    </section>
+    <section id="unavailable" class="notice wrap" hidden>
+      <h1 data-text="unavailable"></h1>
+      <p data-text="unavailableHelp"></p>
+      <a id="recover" href="./index.html" data-text="recover"></a>
+    </section>
+    <section id="review-workspace" class="review wrap" aria-labelledby="review-title" hidden>
+      <div class="review-head">
+        <div><p id="scenario-name" class="kicker"></p><h1 id="review-title"></h1></div>
+        <div class="review-actions">
+          <a id="design-shortcut" data-doc="design" data-text="design"></a>
+          <button id="copy-link" class="primary" type="button" data-text="copy"></button>
+        </div>
+      </div>
+      <div id="share-fallback" class="fallback" hidden>
+        <label><span data-text="copyManually"></span><input id="share-url" type="url" readonly></label>
+      </div>
+      <div class="review-grid">
+        <section class="panel preview-panel" aria-labelledby="preview-heading">
+          <div class="panel-head">
+            <h2 id="preview-heading" tabindex="-1" data-text="preview"></h2>
+            <label class="format-picker"><span class="sr-only" data-text="format"></span><select id="format"></select></label>
+            <output id="dimensions" data-aria="dimensions"></output>
+          </div>
+          <div class="stage"><div id="frame-area"><div id="frame-size">
+            <iframe id="preview" title="Shop"></iframe>
+          </div></div></div>
+        </section>
+        <div class="review-aside">
+          <details class="panel controls" id="controls">
+            <summary data-text="settings"></summary>
+            <div class="toolbar">
+              <label><span data-text="persona"></span><select id="role"></select></label>
+              <label><span data-text="state"></span><select id="state"></select></label>
+              <label class="record"><span data-text="record"></span><select id="record"></select></label>
+            </div>
+          </details>
+          <section class="panel doc-panel" aria-labelledby="docs-heading">
+            <div class="panel-head"><h2 id="docs-heading" tabindex="-1" data-text="documentation"></h2></div>
+            <nav class="doc-nav" data-aria="documentation" id="review-documents"></nav>
+            <div id="document-content" class="doc-content" role="region" aria-labelledby="docs-heading" tabindex="0" data-text="noDocument"></div>
+          </section>
+        </div>
+      </div>
+    </section>
+    <noscript><p>Enable JavaScript to open the shop.</p></noscript>
+  </main>
+  <div id="status" class="sr-only" role="status"></div>
+</body>
+</html>

@@ -1,0 +1,131 @@
+.phase-method .phase-method-link {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.4rem;
+  font-weight: 600;
+}
+.phase-method-link:hover strong,
+.tutorial-step-link:hover {
+  text-decoration: underline;
+}
+.phase-method .phase-skill-link,
+.tutorial-step-skills a {
+  display: inline-block;
+  color: var(--io-blue, #0000d2);
+  font-size: 0.875rem;
+  line-height: 1.45;
+  text-decoration: underline;
+  text-underline-offset: 0.18em;
+  overflow-wrap: anywhere;
+}
+.phase-method .phase-skill-link {
+  margin-top: auto;
+  padding-top: 0.35rem;
+}
+.tutorial-layout {
+  grid-template-areas: 'heading outline' 'article outline' 'related outline';
+  row-gap: 0;
+}
+.tutorial-layout > .article-heading {
+  grid-area: heading;
+}
+.tutorial-layout > article {
+  grid-area: article;
+}
+.tutorial-layout > .side {
+  grid-area: related;
+  position: static;
+  margin-block-start: 1.5rem;
+}
+.tutorial-outline {
+  grid-area: outline;
+  border-inline-start: 1px solid var(--io-line, #ddd);
+  padding-inline-start: 1.1rem;
+  min-width: 0;
+}
+.tutorial-outline h2 {
+  margin: 0 0 0.7rem;
+  font-size: 1.05rem;
+}
+.tutorial-outline ol,
+.tutorial-outline ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.tutorial-outline ol > li {
+  padding-block: 0.55rem;
+  border-bottom: 1px solid var(--io-line, #ddd);
+}
+.tutorial-step-link {
+  display: block;
+  font-size: 0.94rem;
+  line-height: 1.45;
+  font-weight: 600;
+}
+.tutorial-step-skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.1rem 0.7rem;
+}
+.tutorial-step-skills a {
+  padding: 0.12rem 0;
+}
+@media (max-width: 900px) {
+  .loop .steps:has(.phase-method) {
+    grid-template-columns: 1fr;
+    height: auto;
+  }
+  .loop .phase-method {
+    display: grid;
+    grid-template-columns: 1fr minmax(7rem, 0.85fr);
+    column-gap: 0.6rem;
+    padding: 0.65rem;
+    border-inline-end: 0;
+    border-block-end: 1px solid var(--io-line, #ddd);
+  }
+  .loop .phase-method:last-child {
+    border-block-end: 0;
+  }
+  .phase-method .phase-method-link {
+    flex-direction: row;
+    align-items: center;
+    gap: 0.4rem;
+  }
+  .phase-method .step-icon {
+    margin-bottom: 0;
+    flex: none;
+  }
+  .phase-method .phase-skill-link {
+    grid-row: 1 / 3;
+    grid-column: 2;
+    align-self: center;
+    margin: 0;
+    padding: 0.2rem 0;
+  }
+}
+@media (max-width: 700px) {
+  .reading-layout.tutorial-layout {
+    grid-template-columns: minmax(0, 1fr);
+    grid-template-areas: 'heading' 'outline' 'article' 'related';
+  }
+  .tutorial-outline {
+    border-inline-start: 0;
+    padding-inline-start: 0;
+    margin-bottom: 2rem;
+  }
+  .tutorial-outline ol > li {
+    display: grid;
+    grid-template-columns: 1fr minmax(7.5rem, 0.9fr);
+    align-items: start;
+    gap: 0.4rem 0.8rem;
+  }
+}
+.tutorial-layout .article-heading h1 {
+  hyphens: auto;
+  overflow-wrap: anywhere;
+}
+@media (max-width: 400px) {
+  .tutorial-layout .article-heading h1 { font-size: 1.95rem; }
+}

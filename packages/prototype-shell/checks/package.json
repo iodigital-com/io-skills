@@ -1,0 +1,16 @@
+{
+  "name": "prototype-shell-framework-checks",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node --test shared-link.test.js",
+    "test:shop": "node --test shop.test.js"
+  },
+  "devDependencies": {
+    "esbuild": "0.28.2",
+    "playwright": "1.65.1",
+    "react": "19.3.1",
+    "react-dom": "19.3.1",
+    "vue": "3.5.46"
+  }
+}

@@ -1,0 +1,19 @@
+/* Manrope and the iO palette used on iodigital.com. */
+@font-face {
+  font-family: Manrope;
+  font-style: normal;
+  font-weight: 200 800;
+  font-display: swap;
+  src: url("./manrope-latin.woff2") format("woff2");
+}
+:root {
+  --io-font: Manrope, Arial, sans-serif;
+  --io-ink: #232323;
+  --io-blue: #0000d2;
+  --io-muted: #5e5e5e;
+  --io-light: #f8f8f8;
+  --io-beige: #f2e9e4;
+  --io-pink: #eddcd7;
+  --io-line: #ddd;
+  --io-focus: #0019ff;
+}

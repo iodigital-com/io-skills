@@ -1,0 +1,11 @@
+# Project tools installed by the skills CLI. The editable library lives in skills/.
+/.agents/skills/
+
+# Local site dependencies and generated assets.
+node_modules/
+/.pnpm-store/
+/.next/
+/out/
+/public/prototypes/bike-shop/docs/
+
+.DS_Store

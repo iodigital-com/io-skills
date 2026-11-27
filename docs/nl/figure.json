@@ -1,0 +1,14 @@
+{
+  "description": "Van spec naar webshop. Kiest de fietser bij de vergelijking de Route 800, dan staat in de winkelmand één Route 800 van €69.",
+  "file": "winkelmand.spec.md",
+  "scenario": "Koplamp kiezen",
+  "actorLabel": "keuze",
+  "actor": "Route 800",
+  "ruleLabel": "aantal",
+  "rule": "1 × Route 800",
+  "preview": "Winkelmand",
+  "title": "Route 800",
+  "status": "€69",
+  "detailLabel": "Gekozen in de vergelijking",
+  "message": "1 koplamp · €69 per stuk"
+}

@@ -1,0 +1,14 @@
+{
+  "description": "From spec to shop. When the cyclist chooses the Route 800 in the comparison, the basket contains one Route 800 at €69.",
+  "file": "basket.spec.md",
+  "scenario": "Choose a bike light",
+  "actorLabel": "choice",
+  "actor": "Route 800",
+  "ruleLabel": "quantity",
+  "rule": "1 × Route 800",
+  "preview": "Basket",
+  "title": "Route 800",
+  "status": "€69",
+  "detailLabel": "Selected in the comparison",
+  "message": "1 front light · €69 each"
+}

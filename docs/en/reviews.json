@@ -1,0 +1,22 @@
+{
+  "title": "Four questions before release.",
+  "intro": "A cyclist chooses the Route 800 from the light comparison and orders one. What do you need to know before the comparison feature goes live?",
+  "questions": {
+    "code-review-and-quality": {
+      "label": "Code quality",
+      "question": "Does each button add the chosen model to the basket and carry it through to the confirmation?"
+    },
+    "accessibility-engineering": {
+      "label": "Accessibility",
+      "question": "Can a visitor using a screen reader tell which light each price and order button belongs to?"
+    },
+    "security-and-hardening": {
+      "label": "Security",
+      "question": "Does checkout use the current catalog price to calculate the order total?"
+    },
+    "performance-optimization": {
+      "label": "Performance",
+      "question": "How quickly can someone read the comparison on a phone with a slow connection?"
+    }
+  }
+}

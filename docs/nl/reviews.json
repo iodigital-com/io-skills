@@ -1,0 +1,22 @@
+{
+  "title": "Vier vragen vóór de release.",
+  "intro": "Een fietser kiest de Route 800 uit de koplampvergelijking en bestelt één exemplaar. Wat wil je weten voor de nieuwe vergelijker live gaat?",
+  "questions": {
+    "code-review-and-quality": {
+      "label": "Codekwaliteit",
+      "question": "Komt bij beide bestelknoppen het gekozen model in de winkelmand én op de bevestiging?"
+    },
+    "accessibility-engineering": {
+      "label": "Toegankelijkheid",
+      "question": "Hoort een bezoeker met een schermlezer bij welke lamp de prijs en de bestelknop horen?"
+    },
+    "security-and-hardening": {
+      "label": "Beveiliging",
+      "question": "Gebruikt de checkout de prijs uit de actuele productcatalogus om het orderbedrag te berekenen?"
+    },
+    "performance-optimization": {
+      "label": "Prestaties",
+      "question": "Hoe snel zijn de vergelijkingswaarden leesbaar op een telefoon met een trage verbinding?"
+    }
+  }
+}

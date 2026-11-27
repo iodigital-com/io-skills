@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <title>Workplace · Equipment requests</title>
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="./demo.css">
+  <script type="module" src="./demo.js"></script>
+</head>
+<body>
+  <header class="masthead">
+    <span class="wordmark"><span class="mark" aria-hidden="true">w.</span>Workplace</span>
+    <span id="perspective"></span>
+  </header>
+  <main>
+    <section id="request" hidden>
+      <a id="all-requests" class="back">← All requests</a>
+      <div class="heading">
+        <div><p id="request-number" class="identifier"></p><h1 id="request-title"></h1></div>
+        <span id="status" class="badge"></span>
+      </div>
+      <nav aria-label="Request views">
+        <a id="detail-link">Details</a><a id="history-link">History</a>
+      </nav>
+      <section id="detail" hidden>
+        <aside id="return-note" class="return-note" aria-labelledby="return-label">
+          <h2 id="return-label">Reason for return</h2><p id="reason"></p>
+        </aside>
+        <section class="paper" aria-labelledby="details-heading">
+          <h2 id="details-heading">Request details</h2>
+          <p id="description"></p>
+          <dl>
+            <div><dt>Equipment</dt><dd id="item"></dd></div>
+            <div><dt id="field-label"></dt><dd id="field-value"></dd></div>
+            <div><dt>Requested</dt><dd id="submitted"></dd></div>
+          </dl>
+          <details id="editor" hidden>
+            <summary id="edit-label"></summary>
+            <form>
+              <label id="input-label" for="correction"></label>
+              <input id="correction" name="correction" required maxlength="80" autocomplete="off">
+              <button type="submit">Save draft</button>
+            </form>
+          </details>
+          <p id="saved" role="status"></p>
+        </section>
+      </section>
+      <section id="history" class="paper" hidden>
+        <h2>Request history</h2>
+        <ol id="events"></ol>
+      </section>
+    </section>
+    <section id="list" hidden>
+      <p class="identifier">Equipment</p>
+      <h1 id="list-title"></h1>
+      <div class="paper list-paper">
+        <div id="rows"></div>
+        <section id="empty" hidden><h2>No requests yet</h2><p>Your equipment requests will appear here.</p></section>
+        <section id="error" hidden><h2>Requests could not be loaded</h2><p>Try again to refresh the list.</p><a class="button" id="retry">Try again</a></section>
+      </div>
+    </section>
+    <section id="unavailable" hidden><h1>Request unavailable</h1><p>Open a configured example from the review overview.</p></section>
+    <noscript>Enable JavaScript to open this example screen.</noscript>
+  </main>
+</body>
+</html>
