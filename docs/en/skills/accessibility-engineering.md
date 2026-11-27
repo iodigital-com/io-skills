@@ -4,7 +4,7 @@ Audit an existing page against WCAG 2.2 AA when someone struggles with a keyboar
 
 ## Example prompt
 
-> Compare Stad 400 and Route 800 using only the keyboard. Can you associate each price and battery life with the right light, add Route 800 and hear which model is in the basket using a screen reader?
+> Complete our registration form with a keyboard and a screen reader. Leave the email address blank and submit. Check where focus lands and whether you can hear which field needs attention. Record how to reproduce each finding.
 
 ## What do you get?
 

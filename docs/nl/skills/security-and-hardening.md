@@ -4,7 +4,7 @@ Controleer hoe een functie invoer verwerkt, toegang beslist en gegevens opslaat.
 
 ## Voorbeeldvraag
 
-> Review de checkoutcode voor een testbestelling. Controleer waar de server product-ID en aantal valideert en de catalogusprijs voor Route 800 ophaalt. Kijk ook welke klantgegevens in de logs kunnen belanden.
+> Een conceptrapport mag alleen zichtbaar zijn voor de auteur en de aangewezen reviewer. Lees de code voor openen en downloaden. Controleer waar de server die rechten afdwingt en welke tests aantonen dat andermans conceptrapport privé blijft.
 
 ## Wat krijg je?
 

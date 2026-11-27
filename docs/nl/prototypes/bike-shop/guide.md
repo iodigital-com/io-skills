@@ -22,8 +22,8 @@ Kies **Add to basket** onder Tour 18. De mand bevat één Tour 18 voor €79. Ki
 
 ## De testbestelling plaatsen {#checkout}
 
-Kies **Continue to test checkout** in de winkelmand. Controleer de voorbeeldklant, het afhalen in de winkel en het totaal. Met **Place test order** rond je de testbestelling lokaal af. [Probeer de checkout met Tour 18](prototype:checkout?role=cyclist&state=ready&record=tour-18).
+Kies **Continue to test checkout** in de winkelmand. Controleer de voorbeeldklant, het afhalen in de winkel en het totaal. Met **Place test order** rond je de testbestelling lokaal af. [Controleer het besteltotaal bij het afrekenen](prototype:checkout?role=cyclist&state=ready&record=tour-18).
 
 ## Het resultaat nakijken {#confirmation}
 
-Bij **Order confirmed** zie je hetzelfde product, hetzelfde aantal en dezelfde prijs als in de mand. Met **Start again** kun je opnieuw beginnen. [Bekijk de bevestiging voor Tour 18](prototype:confirmation?role=cyclist&state=ready&record=tour-18).
+Bij **Order confirmed** zie je hetzelfde product, hetzelfde aantal en dezelfde prijs als in de mand. Met **Start again** kun je opnieuw beginnen. [Controleer het bestelde artikel op de bevestiging](prototype:confirmation?role=cyclist&state=ready&record=tour-18).

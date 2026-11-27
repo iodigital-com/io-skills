@@ -4,7 +4,7 @@ Clarify a brief when the same request could mean different things to different p
 
 ## Example prompt
 
-> Our bike shop asks for “product comparison”. Ask me about a cyclist in the shop deciding between two models. Find out what they weigh up when choosing a light, bag or lock and what they want to do next. Ask one question at a time.
+> Our team has asked for ‘a better dashboard’. Interview me as a team member. Start with the last time I lacked the information to make a decision. Ask one question at a time and summarise who needs to make which decision.
 
 ## What do you get?
 

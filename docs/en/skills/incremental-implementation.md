@@ -4,7 +4,7 @@ Work through an implementation plan in small changes that you can demonstrate an
 
 ## Example prompt
 
-> Build the smallest slice that lets me compare Stad 400 and Route 800 and see my chosen Route 800 in the basket. Show me how to test that slice locally before building the test checkout.
+> Our spec lets users save documents as favourites and open them later from a list. Build one working slice that lets me mark a document and still see it marked after a reload. Show me how to check that locally before adding the list.
 
 ## What do you get?
 

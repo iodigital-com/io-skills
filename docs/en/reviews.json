@@ -1,22 +1,23 @@
 {
+  "label": "Review",
   "title": "Four questions before release.",
-  "intro": "A cyclist chooses the Route 800 from the light comparison and orders one. What do you need to know before the comparison feature goes live?",
+  "intro": "A user saves a private draft to finish later. What do you check before release?",
   "questions": {
     "code-review-and-quality": {
       "label": "Code quality",
-      "question": "Does each button add the chosen model to the basket and carry it through to the confirmation?"
+      "question": "Is the last saved edit still there when you close the draft and reopen it?"
     },
     "accessibility-engineering": {
       "label": "Accessibility",
-      "question": "Can a visitor using a screen reader tell which light each price and order button belongs to?"
+      "question": "Does a screen reader announce that the draft was saved without the user having to find the confirmation?"
     },
     "security-and-hardening": {
       "label": "Security",
-      "question": "Does checkout use the current catalog price to calculate the order total?"
+      "question": "When someone opens or saves a draft, does the server check that it belongs to the signed-in user?"
     },
     "performance-optimization": {
       "label": "Performance",
-      "question": "How quickly can someone read the comparison on a phone with a slow connection?"
+      "question": "On a slow connection, how long does it take for the user to see that the draft has been saved?"
     }
   }
 }

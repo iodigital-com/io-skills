@@ -4,7 +4,7 @@ Decide which signals an on-call engineer needs when a feature goes live or user 
 
 ## Example prompt
 
-> The confirmation sometimes fails to appear after a test order. How can we tell whether the order was saved and where the confirmation stalls? Use a test order ID to follow the steps.
+> An export sometimes stays ‘Pending’. Which signals would tell us whether the job is still queued, processing has stopped or the status update is missing? Use one test export to trace the job from request to download.
 
 ## What do you get?
 

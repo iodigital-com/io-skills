@@ -4,7 +4,7 @@ Maak een bestaande functie beter leesbaar als vertakkingen of herhaling het moei
 
 ## Voorbeeldvraag
 
-> De mobiele en brede vergelijkingsweergave bepalen elk op hun eigen manier welk licht aan de mand wordt toegevoegd. Vereenvoudig die code en controleer het resultaat voor beide modellen op beide breedtes.
+> Het aanmaakformulier en het bewerkformulier valideren een einddatum elk op hun eigen manier. Leg voor beide vast wat er gebeurt bij een lege datum, een eerdere einddatum en gelijke datums. Vereenvoudig de dubbele logica en controleer die gevallen opnieuw.
 
 ## Wat krijg je?
 

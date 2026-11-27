@@ -4,7 +4,7 @@ Explore different directions when the problem is familiar but the team is still 
 
 ## Example prompt
 
-> Shoppers find it hard to compare two bike lights on a phone. Explore three ways to show the difference in light output and battery life. Which assumption could we test with one shopper?
+> After a project meeting, team members often don’t know who will act on a decision. Explore three ways to make that clear. Help me choose one idea to try at our next meeting and identify the assumption it would test.
 
 ## What do you get?
 

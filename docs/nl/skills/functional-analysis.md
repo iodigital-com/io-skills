@@ -4,7 +4,7 @@ Leg de afgesproken werking van een feature uit in de taal van de klant. Gebruik 
 
 ## Voorbeeldvraag
 
-> Beschrijf voor de klant hoe een shopper de twee fietslichten vergelijkt en Route 800 aan de mand toevoegt. Zet een gecontroleerde prototypelink naast de uitleg over de mand met één Route 800 van €69.
+> Gebruik de afgesproken spec en het prototype voor verlofaanvragen. Leg aan een medewerker uit wat die ziet na het indienen en aan de leidinggevende hoe die dezelfde aanvraag beoordeelt. Zet bij beide stappen een geteste link naar de juiste rol en toestand.
 
 ## Wat krijg je?
 

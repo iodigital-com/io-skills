@@ -4,7 +4,7 @@ Plan the transition when a new field, API or system needs to coexist with an old
 
 ## Example prompt
 
-> Older basket lines store the bike light’s name. We want to store its stable product ID instead. Propose a migration and show how it handles an existing basket containing Route 800.
+> Saved notifications currently identify the recipient by username. We want to store the stable user ID. Plan the transition while old and new app versions run side by side. How do we check that existing notifications still reach the right person?
 
 ## What do you get?
 

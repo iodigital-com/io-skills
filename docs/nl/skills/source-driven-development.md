@@ -4,7 +4,7 @@ Controleer het gebruik van een bibliotheek of framework aan de hand van officië
 
 ## Voorbeeldvraag
 
-> Controleer in de officiële documentatie van onze geïnstalleerde router hoe een link naar een vergelijking na herladen beide product-ID’s behoudt. Wijs het relevante API-onderdeel aan en pas het toe op Stad 400 en Route 800.
+> Na herladen verliest onze zoekpagina het gekozen filter. Zoek de routerversie op in het project en controleer in de officiële documentatie hoe die versie queryparameters ondersteunt. Toon hoe we het filter ‘Open’ kunnen bewaren in een deelbare URL en link naar de bron.
 
 ## Wat krijg je?
 

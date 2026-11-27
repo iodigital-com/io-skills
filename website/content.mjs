@@ -2,10 +2,14 @@ import { existsSync, readFileSync, readdirSync } from 'node:fs'
 import { dirname, join, relative, resolve, sep } from 'node:path'
 import { fileURLToPath } from 'node:url'
 import MarkdownIt from 'markdown-it'
+import nl from '../docs/nl/index.json' with { type: 'json' }
+import en from '../docs/en/index.json' with { type: 'json' }
+import { phaseForSkill, workflowSteps } from './phases.mjs'
 
 const root = resolve(dirname(fileURLToPath(import.meta.url)), '..')
 const languages = ['nl', 'en']
 const markdown = new MarkdownIt({ html: false })
+export const copyFor = (lang) => ({ nl, en })[lang]
 
 export function skillIds() {
   const directory = join(root, 'skills')
@@ -65,8 +69,11 @@ function prepareLinks(inline, documentUrl, heading) {
       }
     }
     const skillLink = /^\/(?:nl|en)\/skills\/([a-z0-9-]+)\/(?:[?#].*)?$/.exec(token.attrGet('href'))
-    if (heading && skillLink && !heading.skills.includes(skillLink[1]))
-      heading.skills.push(skillLink[1])
+    if (skillLink) {
+      const id = skillLink[1]
+      token.attrSet('data-phase', phaseForSkill(id))
+      if (heading && !heading.skills.includes(id)) heading.skills.push(id)
+    }
   }
 }
 
@@ -122,6 +129,9 @@ export function readArticle(lang, relativeMarkdownPath) {
   }
   const headings = []
   const usedIds = new Set()
+  const workflowPhases = path === 'workflow.md'
+    ? new Map(workflowSteps.map(({ phase }) => [copyFor(lang).groups[phase], phase]))
+    : null
   const documentUrl = new URL('/' + lang + '/' + path.split(sep).join('/'), 'https://docs.invalid')
   for (const [index, token] of body.entries()) {
     if (token.type === 'inline') prepareLinks(token, documentUrl, headings.at(-1))
@@ -151,7 +161,9 @@ export function readArticle(lang, relativeMarkdownPath) {
     for (let suffix = 2; usedIds.has(id); suffix++) id = base + '-' + suffix
     usedIds.add(id)
     token.attrSet('id', id)
-    headings.push({ id, text, skills: [] })
+    const phase = workflowPhases?.get(text)
+    if (phase) token.attrSet('data-phase', phase)
+    headings.push({ id, text, skills: [], phase })
   }
   renderProse(body.length)
   return { title, intro, blocks, headings }

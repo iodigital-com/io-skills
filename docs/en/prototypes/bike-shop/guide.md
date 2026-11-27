@@ -22,8 +22,8 @@ Choose **Add to basket** under Tour 18. The basket contains one Tour 18 at €79
 
 ## Place the test order {#checkout}
 
-Choose **Continue to test checkout** in the basket. Check the example customer, collection in store and the total. Choose **Place test order** to complete the purchase locally. [Try checkout with Tour 18](prototype:checkout?role=cyclist&state=ready&record=tour-18).
+Choose **Continue to test checkout** in the basket. Check the example customer, collection in store and the total. Choose **Place test order** to complete the purchase locally. [Check the order total at checkout](prototype:checkout?role=cyclist&state=ready&record=tour-18).
 
 ## Check the confirmation {#confirmation}
 
-The **Order confirmed** screen shows the same product, quantity and price as the basket. Choose **Start again** to make a new selection. [See the confirmation for Tour 18](prototype:confirmation?role=cyclist&state=ready&record=tour-18).
+The **Order confirmed** screen shows the same product, quantity and price as the basket. Choose **Start again** to make a new selection. [Check the ordered item on the confirmation screen](prototype:confirmation?role=cyclist&state=ready&record=tour-18).

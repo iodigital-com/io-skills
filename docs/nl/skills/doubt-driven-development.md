@@ -4,7 +4,7 @@ Laat een tweede beoordelaar een belangrijke technische aanname onderzoeken voord
 
 ## Voorbeeldvraag
 
-> We nemen aan dat de gekozen lamp gelijk blijft wanneer de mobiele vergelijking de kaarten herschikt. Laat een onafhankelijke reviewer die aanname toetsen door de productvolgorde om te draaien en opnieuw Route 800 te kiezen.
+> We nemen aan dat opnieuw starten na een onderbreking nooit een dubbele herinnering verstuurt. Geef een onafhankelijke reviewer de verzendcode en die aanname. Zoek een tegenvoorbeeld, bijvoorbeeld een stop tussen versturen en opslaan, en controleer of het echt optreedt.
 
 ## Wat krijg je?
 

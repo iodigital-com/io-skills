@@ -26,7 +26,9 @@ npx skills add iodigital-com/io-skills --skill '*'
 
 To start your own prototype, run `node <installed-skill-dir>/scripts/create.mjs ./prototype-review`. Replace `<installed-skill-dir>` with the project path shown for `prototype-shell` by `npx skills list`.
 
-To adapt a skill for iO, edit its `SKILL.md` and supporting files under `skills/<name>/`. The separate `.agents/skills/` directory holds the project tools installed by the CLI. The initial 26 library skills come from [Addy Osmani’s agent-skills at revision e997ac5](https://github.com/addyosmani/agent-skills/tree/e997ac5b9a74eab332d5e9793bb38a38c8cfdd74/skills). Each includes the [upstream MIT license](licenses/addy-agent-skills-LICENSE) so the notice travels with individual installations.
+To adapt a skill, edit `skills/<name>/SKILL.md` and its supporting files. The project’s `.agents/skills` directory links to `skills/`, so new and updated definitions are available to agents working in this checkout. Other projects install those skills from the iO repository.
+
+The first 26 skills were adapted from [Addy Osmani’s agent-skills at revision e997ac5](https://github.com/addyosmani/agent-skills/tree/e997ac5b9a74eab332d5e9793bb38a38c8cfdd74/skills). Each carries the [original MIT license](licenses/addy-agent-skills-LICENSE).
 
 ## Development
 
@@ -34,9 +36,9 @@ To adapt a skill for iO, edit its `SKILL.md` and supporting files under `skills/
 
 ### Run the prototype review shell
 
-Run `pnpm prototype` at the repository root with Python 3 installed. Open [the example prototype](http://127.0.0.1:4319/) and select **Improve a returned request**. Try changing the persona to **Reviewer**, choosing **Phone** and opening the copied link in a private window.
+Run `pnpm prototype` at the repository root with Python 3 installed. In the [equipment-request demo](http://127.0.0.1:4319/), select **Improve a returned request** to see why a reviewer sent an application back for changes. Choose **Reviewer** and **Phone**, then use **Copy situation link**. Open the link in a private window and check that it restores the same request, role and screen size.
 
-The [starter](skills/prototype-shell/assets/starter/) ships with the skill. Edit `project.js` in your project copy to connect screens, scenarios, example records, viewport sizes and FA passages. The [adaptation guide](skills/prototype-shell/references/adapting.md) covers React, Vue and Twig.
+The [starter](skills/prototype-shell/assets/starter/) ships with the skill. Edit `project.js` in your project copy to connect screens, scenarios, example records, viewport sizes and the relevant passages from your functional analysis. The [adaptation guide](skills/prototype-shell/references/adapting.md) covers React, Vue and Twig.
 
 Run `pnpm test:prototype` to check starter creation, navigation and link resolution. The [React and Vue test instructions](packages/prototype-shell/checks/README.md) cover the two browser checks. The full example walkthrough is in the [approved V1 spec](spec/SPEC-prototype-shell.md).
 

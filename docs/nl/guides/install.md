@@ -37,7 +37,7 @@ npx skills list
 Start in die projectmap een nieuwe sessie met de gekozen agent. Heb je `design-spec` geïnstalleerd, probeer dan deze opdracht.
 
 ```prompt
-Gebruik design-spec om de vergelijking van twee koplampen op een telefoon te schetsen. De Stad 400 kost €39 en brandt 2 uur op de hoogste stand bij 400 lumen. De Route 800 kost €69 en brandt 3 uur op de hoogste stand bij 800 lumen. Laat zien welke bestelactie bij welke lamp hoort.
+Gebruik design-spec om een takenlijst op een telefoon te schetsen. De taak ‘Verslag nalezen’ staat open en ‘Agenda delen’ is afgerond. Laat zien hoe iemand alleen de open taken bekijkt en daarna terugkeert naar de volledige lijst.
 ```
 
-Kun je op het wireframe de drie eigenschappen per lamp vinden en aanwijzen hoe de fietser alleen de Route 800 in de winkelmand legt?
+Kun je in de schets aanwijzen welk filter actief is, welke taak dan zichtbaar is en hoe je beide taken weer toont?

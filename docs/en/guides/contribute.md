@@ -6,7 +6,7 @@ Does your team have a workflow another project team could use? Share the skill w
 
 Write down the question that would lead someone to the skill, the input it needs and the result it should produce. Check the catalog to see whether the task is already covered. A focused improvement can go into an existing skill.
 
-An example for [design-spec](../skills/design-spec.md) uses two front lights that a cyclist wants to compare on a phone. Supply the price, light output and run time on the highest setting for each model. Ask for a text wireframe in which the cyclist adds only the Route 800 to the basket. The colleague testing the contribution should be able to point to the order action for that model in the wireframe.
+For example, give [design-spec](../skills/design-spec.md) a list with two tasks. ‘Review the report’ is open and ‘Share the agenda’ is complete. Ask for a text wireframe for a phone with a filter for open tasks. Your colleague should be able to point out which task remains visible and how to bring back the full list.
 
 ## Make the contribution easy to try
 
@@ -19,4 +19,4 @@ An example for [design-spec](../skills/design-spec.md) uses two front lights tha
 
 Ask a colleague on another team to open the proposed version, install the skill in an empty project and follow the example as written. Have them record the output, which check passed and where they needed more explanation in the pull request.
 
-If the wireframe leaves your colleague unsure which light ‘Add to basket’ will add, record exactly where the uncertainty arose. Revise the prompt or example and ask the colleague to try the same purchase again before the skill joins the library.
+If your colleague hesitates when trying to show both tasks again, record where they got stuck. Revise the prompt or example and ask them to try the filter again before adding the skill to the library.

@@ -1,22 +1,23 @@
 {
+  "label": "Reviewen",
   "title": "Vier vragen vóór de release.",
-  "intro": "Een fietser kiest de Route 800 uit de koplampvergelijking en bestelt één exemplaar. Wat wil je weten voor de nieuwe vergelijker live gaat?",
+  "intro": "Een gebruiker slaat een persoonlijk concept op om er later aan verder te werken. Wat controleer je voor de release?",
   "questions": {
     "code-review-and-quality": {
       "label": "Codekwaliteit",
-      "question": "Komt bij beide bestelknoppen het gekozen model in de winkelmand én op de bevestiging?"
+      "question": "Staat de laatste opgeslagen tekst er nog als je het concept sluit en opnieuw opent?"
     },
     "accessibility-engineering": {
       "label": "Toegankelijkheid",
-      "question": "Hoort een bezoeker met een schermlezer bij welke lamp de prijs en de bestelknop horen?"
+      "question": "Meldt een schermlezer dat het concept is opgeslagen zonder dat de gebruiker naar de bevestiging hoeft te zoeken?"
     },
     "security-and-hardening": {
       "label": "Beveiliging",
-      "question": "Gebruikt de checkout de prijs uit de actuele productcatalogus om het orderbedrag te berekenen?"
+      "question": "Controleert de server bij het openen en opslaan of het concept van de aangemelde gebruiker is?"
     },
     "performance-optimization": {
       "label": "Prestaties",
-      "question": "Hoe snel zijn de vergelijkingswaarden leesbaar op een telefoon met een trage verbinding?"
+      "question": "Hoelang duurt het op een trage verbinding voordat de gebruiker ziet dat het concept is opgeslagen?"
     }
   }
 }

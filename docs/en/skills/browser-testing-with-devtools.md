@@ -4,7 +4,7 @@ Inspect a screen while it runs. With a connected Chrome DevTools MCP server, you
 
 ## Example prompt
 
-> Open Bike locks at phone width. Compare Kabel 90 and Beugel 23 by price, type and length. Choose Beugel 23 and check that the test confirmation shows one U-lock at €59.
+> Open the task list at phone width and filter by ‘Open’. Reload the page. Check that the filter stays selected and only open tasks appear. If the results differ, record the URL and the network request.
 
 ## What do you get?
 

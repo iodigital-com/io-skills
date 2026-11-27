@@ -4,7 +4,7 @@ Verken meerdere richtingen wanneer het probleem herkenbaar is maar het team nog 
 
 ## Voorbeeldvraag
 
-> Shoppers vinden het lastig om twee fietslichten te vergelijken op hun telefoon. Verken drie manieren om het verschil tussen lichtopbrengst en brandduur te tonen. Welke aanname kunnen we met één shopper toetsen?
+> Na een projectoverleg weten teamleden vaak niet wie een beslissing opvolgt. Verken drie manieren om dat duidelijk te maken. Kies samen met me één idee dat we in het volgende overleg kunnen uitproberen en benoem welke aanname we daarmee toetsen.
 
 ## Wat krijg je?
 

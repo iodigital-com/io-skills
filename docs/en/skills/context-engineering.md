@@ -4,7 +4,7 @@ Give an agent the project knowledge it needs for a task, for example when new se
 
 ## Example prompt
 
-> We’re adding comparisons to our existing bike webshop. Where can I find the categories, product attributes, current purchase button and test for one item in the basket? Give a new session the current spec and just the files it needs.
+> A new agent session needs to make the email address editable on the profile page. Find the current spec, profile screen, code that saves the change and relevant test. Explain why each file matters and how to run the test locally.
 
 ## What do you get?
 

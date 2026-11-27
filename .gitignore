@@ -1,6 +1,3 @@
-# Project tools installed by the skills CLI. The editable library lives in skills/.
-/.agents/skills/
-
 # Local site dependencies and generated assets.
 node_modules/
 /.pnpm-store/

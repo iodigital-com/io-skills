@@ -6,7 +6,7 @@ Heeft je team een werkwijze die ook een ander projectteam kan gebruiken? Deel de
 
 Noteer aan welke vraag een collega de skill herkent, welke invoer nodig is en welk resultaat eruit moet komen. Kijk in de catalogus of de taak al bestaat. Bij een gerichte verbetering kun je de bestaande skill aanpassen.
 
-Een voorbeeld voor [design-spec](../skills/design-spec.md) gebruikt twee koplampen die een fietser op een telefoon wil vergelijken. Geef de prijs, lichtopbrengst en brandduur op de hoogste stand voor beide modellen mee. Vraag een tekstwireframe waarin de fietser alleen de Route 800 in de winkelmand legt. De collega die de bijdrage test, moet in het wireframe kunnen aanwijzen welke bestelactie bij dat model hoort.
+Geef [design-spec](../skills/design-spec.md) bijvoorbeeld een lijst met twee taken. ‘Verslag nalezen’ is open en ‘Agenda delen’ is afgerond. Vraag om een tekstwireframe voor een telefoon met een filter voor open taken. Je collega moet kunnen aanwijzen welke taak na het filteren zichtbaar is en hoe je de volledige lijst terugkrijgt.
 
 ## Maak de bijdrage uitprobeerbaar
 
@@ -19,4 +19,4 @@ Een voorbeeld voor [design-spec](../skills/design-spec.md) gebruikt twee koplamp
 
 Vraag een collega uit een ander team om de voorgestelde versie te openen, de skill in een leeg project te installeren en het voorbeeld letterlijk te volgen. Laat de collega in de pull request vastleggen wat eruit kwam, welke controle slaagde en waar extra uitleg nodig was.
 
-Blijkt uit het wireframe niet welke van de twee lampen de fietser met ‘Add to basket’ kiest, noteer dan precies waar je collega twijfelde. Pas de opdracht of het voorbeeld aan en laat de collega dezelfde aankoop opnieuw doorlopen vóór opname in de bibliotheek.
+Twijfelt je collega hoe je beide taken weer toont? Noteer waar die vastliep, pas de opdracht of het voorbeeld aan en laat de collega het filter opnieuw uitproberen voordat je de skill opneemt in de bibliotheek.

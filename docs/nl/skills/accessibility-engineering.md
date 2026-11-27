@@ -4,7 +4,7 @@ Controleer een bestaande pagina op WCAG 2.2 AA wanneer iemand vastloopt met het 
 
 ## Voorbeeldvraag
 
-> Vergelijk Stad 400 en Route 800 met alleen het toetsenbord. Kun je de prijzen en brandtijden aan het juiste model koppelen, Route 800 toevoegen en met een schermlezer horen welk model in de mand zit?
+> Doorloop ons aanmeldformulier met het toetsenbord en een schermlezer. Laat het e-mailadres leeg en verstuur het formulier. Controleer waar de focus terechtkomt en of je hoort welk veld je moet invullen. Noteer hoe je elke bevinding kunt reproduceren.
 
 ## Wat krijg je?
 

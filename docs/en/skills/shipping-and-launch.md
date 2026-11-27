@@ -4,7 +4,7 @@ Agree on rollout and recovery before a feature goes into production. Decide who 
 
 ## Example prompt
 
-> We want to roll out the updated mobile comparison gradually. What signals confirm that the selected bike light reaches the basket? Describe how we can restore the previous view if a problem appears.
+> Our new request form is behind a feature flag. We want to release it to one team first. Record who will monitor the first submissions, which signals will guide wider rollout and how to restore the old form while preserving submitted requests.
 
 ## What do you get?
 

@@ -4,7 +4,7 @@ Review how a feature handles input, grants access and stores data. Start with th
 
 ## Example prompt
 
-> Review the checkout code for a test order. Check where the server validates the product ID and quantity and looks up the catalog price for Route 800. Identify any customer data that could end up in logs.
+> A draft report should be visible only to its author and assigned reviewer. Read the code for opening and downloading a report. Check where the server enforces those permissions and which tests establish that another person’s draft stays private.
 
 ## What do you get?
 

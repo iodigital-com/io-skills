@@ -1,6 +1,6 @@
 # Working from the spec
 
-Use the spec in Git to record the behaviour the client and team expect. In the first loop, clarify one part with a brief, a spec and a prototype. In the second loop, build, test and review it. When the agreement changes, update the spec first. The team can build one part while a different question remains open.
+In spec-driven development, the client and team record the behaviour they expect and an example they can use to check it. As soon as one decision is clear, the team can build and test it. A review, implementation, test or release can reveal a missing decision or a reason to reconsider one. Record the revised behaviour in the spec in Git first.
 
 ## Which skill do you need now?
 
@@ -8,47 +8,47 @@ Use the spec in Git to record the behaviour the client and team expect. In the f
 | --- | --- | --- |
 | The client has an idea. The outcome is still unclear. | [interview-me](skills/interview-me.md) | A confirmed user need and the decisions still open. |
 | The goal is clear. The team needs to agree on the feature’s behaviour. | [spec-driven-development](skills/spec-driven-development.md) | A spec in Git with agreed behaviour and a testable acceptance example. |
-| The behaviour is agreed. You want to review the screens and interactions. | [design-spec](skills/design-spec.md), then [prototype-shell](skills/prototype-shell.md) | A screen sketch and a clickable situation the client can try. |
+| You want to see whether someone can complete the agreed task. | [design-spec](skills/design-spec.md) for a sketch, [prototype-shell](skills/prototype-shell.md) if you want the iO review environment | A sketch or a clickable scenario to discuss together. |
 | One part of the spec is clear enough to build. | [planning-and-task-breakdown](skills/planning-and-task-breakdown.md), then [incremental-implementation](skills/incremental-implementation.md) | Small tasks and a first working change. |
 | You want evidence that the implementation meets the agreement. | [test-driven-development](skills/test-driven-development.md) and [browser-testing-with-devtools](skills/browser-testing-with-devtools.md) | A behaviour test and a user action checked in the browser. |
 | The change works. The team needs to decide whether it is ready to ship. | [code-review-and-quality](skills/code-review-and-quality.md), then [shipping-and-launch](skills/shipping-and-launch.md) | Resolved review findings and an informed release decision. |
 
-**The tutorial example.** A children’s bike shop wants its customers to compare front lights, bike bags and bike locks. A parent and her child choose two distinct models in one category and decide which one to order. For a light for the early ride to school, they compare price, brightness and run time. For a bag, they want to know how much it holds and where it fits on the bike.
-
 ## Brief
 
-Start with a decision a user needs to make. Give [interview-me](skills/interview-me.md) the initial client request and have it ask one question at a time. Record confirmed answers and open questions in the [briefing template](guides/briefing.md). If a team already has a brief, focus on the decisions it still needs.
-
-For the bike retailer, “compare products” means helping a cyclist find out whether the more expensive light lasts longer at full brightness. Move on when the retailer can explain what decision the visitor should be able to make.
+Ask the client what someone is trying to do today, where they get stuck and what they should be able to do after the change. Use [interview-me](skills/interview-me.md) to explore one real situation. Use the [briefing template](guides/briefing.md) to record who you are building for, what outcome matters and which decisions are still open.
 
 ## Specify
 
-Give [spec-driven-development](skills/spec-driven-development.md) the confirmed brief. Ask for the intended behaviour, boundaries, open questions and an acceptance example. On an **existing** site, start with [context-engineering](skills/context-engineering.md) to locate the relevant components, spec and tests. Then record what the feature adds to the current journey.
+Give [spec-driven-development](skills/spec-driven-development.md) the confirmed brief. Describe the intended behaviour, what falls outside the change and one example the client can use to see whether the feature works. On an existing project, use [context-engineering](skills/context-engineering.md) to find the relevant code, decisions and tests.
 
-A testable agreement is: “When the visitor chooses the Route 800 in the comparison, the basket contains one Route 800 at €69.” The spec is usable when someone who missed the discussion can work out what to test from that sentence.
+Suppose someone wants to finish a form later. A testable agreement would be “If I save a draft and reopen it tomorrow, my answers are still there.” The client can confirm whether that meets their need, and the team knows what to test.
 
 ## Review the prototype
 
-Use [design-spec](skills/design-spec.md) when you know what a screen should do. Give it the spec and relevant states and ask for phone and desktop wireframes. [Open the design spec for the comparison screen](/prototypes/bike-shop/index.html?lang=en&screen=compare&role=cyclist&state=ready&record=lights&format=phone&scenario=buy-light&doc=design). Find the ‘Runtime on the highest setting’ row and the value for the Route 800 in the phone wireframe. Can you also tell from the screen that the three hours refer to the highest setting?
+Ask the client to complete a task in the prototype. The project team observes whether the feature works as agreed. After saving a draft, for example, can the client find it again and continue filling it in without help? Discuss any questions that come up and record new decisions in the spec.
 
-Then use [prototype-shell](skills/prototype-shell.md) to make the screens and sample data interactive. Ask the client to complete one task and watch where they hesitate.
+Choose a format that answers the question. A sketch made with [design-spec](skills/design-spec.md) may be enough to review a screen layout. To try the same scenario together with the spec at hand, iO Skills offers [prototype-shell](skills/prototype-shell.md) as an optional review environment. A custom prototype can be a better fit when you want to try an interaction inside your own app. If the behaviour is clear, you can go straight to building and testing.
 
-Does the client need an explanation to refer to after the review? Give [functional-analysis](skills/functional-analysis.md) the agreed spec and a tested link to the exact situation. [Try the product comparison in the shell](/prototypes/bike-shop/index.html?lang=en&screen=compare&role=cyclist&state=ready&record=lights&format=phone&scenario=buy-light).
+Would the client like a description to refer back to? Give [functional-analysis](skills/functional-analysis.md) the agreed spec and a tested link to the situation you reviewed together.
 
 ## Build
 
 Give [planning-and-task-breakdown](skills/planning-and-task-breakdown.md) the agreed spec and ask for tasks with a visible result. Use [incremental-implementation](skills/incremental-implementation.md) to build and demonstrate one task at a time.
 
-A first task can end with the comparison of Stad 400 and Route 800. Use bike bags in the next demo to see whether the rows change with the category. Then connect the selection to the existing basket.
+For the form, the first task might let someone save and reopen a draft. Let the client try those actions before extending the feature to cover editing a saved draft.
 
 ## Test
 
 Give [test-driven-development](skills/test-driven-development.md) the acceptance example before implementing the task. Let the test demonstrate the missing behaviour, then run it again after the change. Use [browser-testing-with-devtools](skills/browser-testing-with-devtools.md) when the screen is working. Repeat the action at phone width and check what the user can see.
 
-Try two purchases, starting each with an empty basket. Choose the Route 800 from a light comparison and check for one light at €69 on confirmation. Then compare Frame 2 with Stuur 5. The handlebar bag should be identifiable by its 5 L capacity and mounting position, and appear as one Stuur 5 at €49 on confirmation.
+For the form, check what the user sees after reopening the draft. Are all their answers still there? Agree on what they should see if saving fails, and test that separately.
 
 ## Ship
 
 Give [code-review-and-quality](skills/code-review-and-quality.md) the change, the agreed spec and the test results. Ask the reviewer to link findings to their impact on the user. Once the findings are resolved, use [shipping-and-launch](skills/shipping-and-launch.md) to check which version was tested, how the team will monitor rollout and how it can roll back if needed.
 
-**Did the agreement change during review?** Return to [spec-driven-development](skills/spec-driven-development.md). Update the acceptance example first, then the affected prototype, implementation and tests. Follow the workflow yourself with [a new project starting from the brief](guides/new-project.md) or [a new feature in an existing shop](guides/existing-project.md).
+**Back to the spec.** Suppose a test reveals that two open tabs can overwrite each other’s changes to a draft. Discuss with the client what should happen in that situation. If you agree to warn the user, use [spec-driven-development](skills/spec-driven-development.md) to update the spec and its acceptance example. Then adjust the implementation and test again with two tabs.
+
+## Worked example
+
+The tutorials follow one feature from the first question through release. Choose [a new project](guides/new-project.md) or [a change to an existing project](guides/existing-project.md). In the bike shop demo, you can compare the [design spec](/prototypes/bike-shop/index.html?lang=en&screen=compare&role=cyclist&state=ready&record=lights&format=phone&scenario=buy-light&doc=design) with the [working prototype](/prototypes/bike-shop/index.html?lang=en&screen=compare&role=cyclist&state=ready&record=lights&format=phone&scenario=buy-light).

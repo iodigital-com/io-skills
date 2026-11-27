@@ -37,7 +37,7 @@ npx skills list
 Start a new session with your chosen agent in that project folder. If you installed `design-spec`, try this prompt.
 
 ```prompt
-Use design-spec to sketch a comparison of two front lights on a phone. The Stad 400 costs €39 and delivers 400 lumens for 2 hours on its highest setting. The Route 800 costs €69 and delivers 800 lumens for 3 hours on its highest setting. Show which order action belongs to each light.
+Use design-spec to sketch a task list on a phone. The task ‘Review the report’ is open and ‘Share the agenda’ is complete. Show how someone views only open tasks and then returns to the full list.
 ```
 
-Can you find all three attributes for each light on the wireframe and point to the action that adds only the Route 800 to the basket?
+Can you point out the active filter, the task it shows and the action that brings both tasks back into view?

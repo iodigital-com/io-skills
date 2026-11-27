@@ -4,7 +4,7 @@ Onderzoek onverwacht gedrag wanneer een test faalt, een build breekt of een eerd
 
 ## Voorbeeldvraag
 
-> Op mobiel kies ik de tweede lamp, Route 800, maar de mand bevat Stad 400. Herhaal het met een lege mand. Volg de product-ID vanaf de knop tot de mandregel en wijs aan waar die voor het eerst verandert.
+> Na het hernoemen van een document toont de lijst de nieuwe titel. Zodra ik de pagina vernieuw, staat de oude titel er weer. Herhaal dit met een lokaal testdocument. Volg de titel van formulier via opslag tot herladen en wijs aan waar hij voor het eerst afwijkt.
 
 ## Wat krijg je?
 

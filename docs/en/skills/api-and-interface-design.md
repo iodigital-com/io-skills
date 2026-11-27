@@ -4,7 +4,7 @@ Define how parts of an application exchange data when several teams or screens w
 
 ## Example prompt
 
-> Design the contract for adding one Route 800 to the basket. Show the product ID and quantity in the input, the price in the response and what the shop receives for an unknown product ID.
+> Our web and mobile apps both need to book a room. Design the API contract with a room ID, start time and end time. Give an example of a successful booking and the response when the slot is already taken.
 
 ## What do you get?
 

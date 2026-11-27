@@ -4,7 +4,7 @@ Werk een afgesproken ontwerp uit in de componenten van het project. Gebruik de s
 
 ## Voorbeeldvraag
 
-> Bouw de productvergelijking volgens onze design-spec. Houd prijs, lumen en brandduur op een smal scherm bij het juiste fietslicht. Zorg dat ik Route 800 zowel met de muis als met het toetsenbord kan toevoegen.
+> Bouw de voorkeurenpagina met onze bestaande formuliercomponenten. Iemand kan e-mailmeldingen aanzetten en de keuze opslaan. Houd de opslaanknop bereikbaar op telefoonbreedte en laat bij een mislukte opslag de gemaakte keuze staan zodat de gebruiker opnieuw kan proberen.
 
 ## Wat krijg je?
 

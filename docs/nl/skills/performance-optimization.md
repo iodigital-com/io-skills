@@ -4,7 +4,7 @@ Meet waar tijd verloren gaat als een scherm traag opstart, een lijst hapert of e
 
 ## Voorbeeldvraag
 
-> Op een telefoon verschijnt de knop onder Route 800 laat. Meet het laden van dezelfde vergelijkingspagina op een vaste verbinding, zoek de grootste vertraging en herhaal de meting na de wijziging.
+> Onze activiteitenlijst opent snel met twintig regels, maar met duizend regels duurt het lang voordat ik kan scrollen. Meet beide gevallen op dezelfde telefoon, bepaal waar de tijd naartoe gaat en herhaal de trage meting na één gerichte wijziging.
 
 ## Wat krijg je?
 

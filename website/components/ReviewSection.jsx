@@ -2,6 +2,7 @@ import { Accessibility, CodeXml, Gauge, ScanEye, ShieldCheck } from 'lucide-reac
 import english from '../../docs/en/reviews.json'
 import dutch from '../../docs/nl/reviews.json'
 import { href } from '../paths.mjs'
+import { phaseForSkill } from '../phases.mjs'
 import '../assets/reviews.css'
 
 const icons = {
@@ -11,7 +12,7 @@ const icons = {
   'performance-optimization': Gauge,
 }
 
-export default function ReviewSection({ lang, copy }) {
+export default function ReviewSection({ lang }) {
   const section = lang === 'nl' ? dutch : english
   return (
     <section className="section review-section" aria-labelledby="review-title">
@@ -19,7 +20,7 @@ export default function ReviewSection({ lang, copy }) {
         <div className="review-intro">
           <p className="section-label">
             <ScanEye aria-hidden="true" />
-            {copy.groups.review}
+            {section.label}
           </p>
           <h2 id="review-title">{section.title}</h2>
           <p className="section-intro">{section.intro}</p>
@@ -29,7 +30,7 @@ export default function ReviewSection({ lang, copy }) {
             const Icon = icons[id]
             return (
               <li key={id}>
-                <a className="review-link" href={href(lang, 'skills/' + id)}>
+                <a className="review-link" data-phase={phaseForSkill(id)} href={href(lang, 'skills/' + id)}>
                   <Icon className="review-icon" size={20} aria-hidden="true" />
                   <div>
                     <strong>{item.label}</strong>

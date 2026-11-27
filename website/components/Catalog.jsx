@@ -3,6 +3,7 @@
 import { useRef, useState } from 'react'
 import { Search } from 'lucide-react'
 import { SkillCard } from './Cards'
+import { PhaseIcon } from './Phase'
 
 function searchable(text) {
   return text
@@ -53,9 +54,11 @@ export default function Catalog({ lang, copy, skills }) {
               type="button"
               key={id}
               className="filter"
+              data-phase={id === 'all' ? undefined : id}
               aria-pressed={group === id}
               onClick={() => setGroup(id)}
             >
+              {id !== 'all' && <PhaseIcon phase={id} />}
               {label}
             </button>
           ))}

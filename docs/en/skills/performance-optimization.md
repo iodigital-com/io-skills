@@ -4,7 +4,7 @@ Measure where time is spent when a screen starts slowly, a list stutters or a qu
 
 ## Example prompt
 
-> On a phone, the button below Route 800 appears late. Measure the same comparison page on a fixed connection, find the largest delay and repeat the measurement after the change.
+> Our activity list opens quickly with twenty rows, but with a thousand rows there’s a long delay before I can scroll. Measure both cases on the same phone, identify where the time goes and repeat the slow case after one targeted change.
 
 ## What do you get?
 

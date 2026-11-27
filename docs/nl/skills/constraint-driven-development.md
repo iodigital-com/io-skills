@@ -4,7 +4,7 @@ Spreek meetbare eisen af wanneer woorden als snel of toegankelijk in een project
 
 ## Voorbeeldvraag
 
-> We willen dat de vergelijking van de fietslichten snel bruikbaar wordt op een telefoon. Kies samen met mij een meetbare grens, een representatief testtoestel en een herhaalbare controle voor wijzigingen aan dit scherm.
+> Ons zoekscherm moet op de telefoons van onze buitendienst snel bruikbaar zijn. Help me afspreken wanneer het scherm bruikbaar is, hoeveel tijd dat mag kosten en op welk toestel en netwerk we dat meten. Leg vast hoe we de grens bij elke wijziging controleren.
 
 ## Wat krijg je?
 

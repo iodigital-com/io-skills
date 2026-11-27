@@ -41,7 +41,7 @@
 
 .review-link:hover strong,
 .review-link:focus-visible strong {
-  color: var(--io-blue);
+  color: var(--phase-ink);
   text-decoration: underline;
   text-underline-offset: 0.18em;
 }
@@ -49,7 +49,7 @@
 .review-icon {
   align-self: start;
   margin-top: 0.15rem;
-  color: var(--io-blue);
+  color: var(--phase-ink);
 }
 
 .review-link strong {

@@ -4,7 +4,7 @@ Werk een implementatieplan uit in kleine wijzigingen die je elk door de relevant
 
 ## Voorbeeldvraag
 
-> Bouw eerst de kleinste stap waarin ik Stad 400 en Route 800 kan vergelijken en de gekozen Route 800 in de mand zie. Laat me die stap lokaal testen voordat je de testbestelling uitwerkt.
+> Volgens onze spec kunnen gebruikers documenten als favoriet bewaren en later in een overzicht openen. Bouw eerst één werkende stap waarin ik een document markeer en na herladen zie dat het gemarkeerd blijft. Laat me die stap lokaal controleren voordat je het overzicht toevoegt.
 
 ## Wat krijg je?
 

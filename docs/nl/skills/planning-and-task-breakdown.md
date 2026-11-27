@@ -4,7 +4,7 @@ Vertaal een concrete spec naar werk dat teamleden kunnen oppakken. Dit helpt wan
 
 ## Voorbeeldvraag
 
-> Verdeel onze spec voor de fietswebshop in kleine taken. Welke afspraak over product-ID en prijs is nodig voordat we de vergelijkingspagina en de mand parallel kunnen bouwen? Geef per taak een controle met Route 800.
+> Volgens onze spec kan een teamlid een taak toewijzen en krijgt de ontvanger daar een melding van. Verdeel dit in kleine taken met elk een zichtbaar resultaat. Wat moeten de teams afspreken voordat ze de toewijzing en de melding parallel kunnen bouwen?
 
 ## Wat krijg je?
 

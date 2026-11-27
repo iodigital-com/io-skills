@@ -4,7 +4,7 @@ Implement an agreed design using the project's components. Use this skill for re
 
 ## Example prompt
 
-> Build the product comparison from our design spec. Keep price, lumens and battery life associated with the right bike light on a narrow screen. Make Route 800 selectable by mouse and keyboard.
+> Build the preferences page with our existing form components. A user can enable email notifications and save the choice. Keep the save button within reach at phone width. If saving fails, keep the selection so the user can retry.
 
 ## What do you get?
 

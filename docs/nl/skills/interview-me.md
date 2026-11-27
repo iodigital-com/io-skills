@@ -4,7 +4,7 @@ Verhelder een briefing wanneer verschillende mensen iets anders kunnen bedoelen 
 
 ## Voorbeeldvraag
 
-> Onze fietsenwinkel vraagt om “producten vergelijken”. Vraag me naar een fietser die in de winkel twijfelt tussen twee modellen. Zoek uit wat die bij een lamp, tas of slot wil afwegen en welke keuze daarna volgt. Stel één vraag tegelijk.
+> Ons team vraagt om ‘een beter dashboard’. Interview mij als teamlid. Begin bij de laatste keer dat ik informatie miste om een beslissing te nemen. Stel één vraag tegelijk en vat samen wie welke beslissing moet kunnen nemen.
 
 ## Wat krijg je?
 

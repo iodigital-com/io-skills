@@ -4,7 +4,7 @@ Leg vast hoe delen van een toepassing gegevens uitwisselen wanneer meerdere team
 
 ## Voorbeeldvraag
 
-> Ontwerp het contract om één Route 800 aan de mand toe te voegen. Toon de product-ID en het aantal in de invoer, de prijs in het antwoord en wat de webshop terugkrijgt bij een onbekende product-ID.
+> Onze webapp en mobiele app moeten een ruimte kunnen reserveren. Ontwerp het API-contract met ruimte-ID, begintijd en eindtijd. Geef een voorbeeld van een geslaagde reservering en van het antwoord wanneer het tijdslot al bezet is.
 
 ## Wat krijg je?
 

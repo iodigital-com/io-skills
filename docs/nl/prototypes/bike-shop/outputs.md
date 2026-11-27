@@ -2,27 +2,27 @@
 
 Deze werkstukken horen bij de nieuwe vergelijkingsmodule. De kinderfietsenwinkel verkoopt koplampen, fietstassen en fietssloten aan gezinnen. Beide tutorials werken aan dezelfde feature. De ene begint met een zelfstandige projectmap voor het prototype, de andere met de bestaande webshop.
 
-## Briefing van de winkelier {#briefing}
+## Briefing van de klant {#briefing}
 
-**Vraag van de winkelier.** “Mijn klanten hebben de juiste afdeling al gevonden. Kunnen ze op hun telefoon twee modellen naast elkaar zetten en hun keuze direct bestellen?”
+**Vraag van de klant.** “Bezoekers van onze webshop hebben de juiste categorie al gevonden. Kunnen ze op hun telefoon twee modellen naast elkaar zetten en hun keuze direct bestellen?”
 
 **Wat bepaalt de keuze?** Een ouder die in de winter met haar kind naar school fietst, wil voor de koplamp weten hoeveel licht ze krijgt en hoelang de lamp op volle sterkte meegaat. Bij een fietstas wil ze weten of de brooddoos en de regenjas erin passen en waar ze de tas kan vastmaken. Bij een slot tellen het type en de lengte. In iedere vergelijking ziet ze ook de prijs en de voorraad.
 
-**Eerste versie.** Kies twee verschillende modellen uit dezelfde categorie. Kies **Add to basket** onder het gewenste model. Of klanten later drie modellen tegelijk willen vergelijken, blijft open. [Begin in de fietsenwinkel](prototype:store?role=cyclist&state=ready&record=categories).
+**Eerste versie.** Kies twee verschillende modellen uit dezelfde categorie. Kies **Add to basket** onder het gewenste model. Of bezoekers later drie modellen tegelijk willen vergelijken, blijft open. [Begin in de fietsenwinkel](prototype:store?role=cyclist&state=ready&record=categories).
 
 ## Huidige kooproute en beschikbare gegevens {#context}
 
 De bestaande webshop uit de briefing verkoopt via categorie, productpagina, winkelmand en checkout. De nieuwe vergelijker biedt een extra route naar dezelfde mand.
 
 - **Productgegevens.** In deze demo groepeert `shop/catalog.js` negen modellen op categorie. Elk heeft een ID en prijs. Die van Frame 2 zijn `frame-2` en €29. Voor deze tas staan er ook 2 liter en framebevestiging. Bij koplampen gebruikt de vergelijker lumen en uren op de hoogste stand, bij sloten het type en de lengte in cm.
-- **Bestelactie.** De bestelknop in `comparisonPage()` in `shop/shop.js` geeft de product-ID van haar eigen kolom door. De winkelmand gebruikt die om naam en prijs te tonen. [Open de mand met Frame 2](prototype:basket?role=cyclist&state=ready&record=frame-2).
-- **Te verifiëren bij de winkel.** Controleer de oorspronkelijke bestelactie op de productpagina in de applicatie van de winkel. Laat de winkelier de eenheden en meetstand van de brongegevens bevestigen voordat producten in dezelfde rij verschijnen.
+- **Bestelactie.** De bestelknop in `comparisonPage()` in `shop/shop.js` geeft de product-ID van haar eigen kolom door. De winkelmand gebruikt die om naam en prijs te tonen. [Controleer of de gekozen tas in de mand zit](prototype:basket?role=cyclist&state=ready&record=frame-2).
+- **Te verifiëren met de klant.** Controleer de oorspronkelijke bestelactie op de productpagina van de webshop. Vraag de klant om de eenheden en meetstand van de brongegevens te bevestigen voordat producten in dezelfde rij verschijnen.
 
 ## Reviewbesluit over de brandduur {#review-decision}
 
-**Waarneming.** Na het scrollen leest een winkelmedewerker bij de Route 800 ‘3 hours’. De toelichting over de meetstand boven de tabel is buiten beeld.
+**Waarneming.** Tijdens de review scrolt de klant naar de rij met de brandduur. Bij de Route 800 staat ‘3 hours’. De toelichting over de meetstand boven de tabel is buiten beeld.
 
-**Besluit en acceptatie.** Vermeld de meetstand bij elke waarde. Op telefoonbreedte staat er ‘2 hours on the highest setting’ in de cel van de Stad 400 en ‘3 hours on the highest setting’ in die van de Route 800. Dit besluit geldt voor de rij brandduur bij koplampen. [Bekijk de twee cellen op telefoonformaat](prototype:compare?role=cyclist&state=ready&record=lights&format=phone).
+**Besluit en acceptatie.** Vermeld de meetstand bij elke waarde. Op telefoonbreedte staat er ‘2 hours on the highest setting’ in de cel van de Stad 400 en ‘3 hours on the highest setting’ in die van de Route 800. Dit besluit geldt voor de rij brandduur bij koplampen. [Controleer de meetstand bij beide waarden op een telefoon](prototype:compare?role=cyclist&state=ready&record=lights&format=phone).
 
 ## Bouwplan voor de zelfstandige proefversie {#plan-new}
 
@@ -58,7 +58,7 @@ Start de site met `pnpm dev`. Voer `pnpm run test:shop` uit in `packages/prototy
 
 ## Tests van de nieuwe en bestaande kooproutes {#test-existing}
 
-- **Nieuwe vergelijking.** Vanuit beide tutorialversies zijn de negen paren in dezelfde Engelstalige webshop doorlopen. Bij elk paar is een bestelling geplaatst. Zo zijn alle negen producten van mand tot bevestiging gecontroleerd. [Bekijk de bevestiging voor Stuur 5](prototype:confirmation?role=cyclist&state=ready&record=stuur-5).
+- **Nieuwe vergelijking.** Vanuit beide tutorialversies zijn de negen paren in dezelfde Engelstalige webshop doorlopen. Bij elk paar is een bestelling geplaatst. Zo zijn alle negen producten van mand tot bevestiging gecontroleerd. [Controleer het gekozen artikel op de bestelbevestiging](prototype:confirmation?role=cyclist&state=ready&record=stuur-5).
 - **Categorie wisselen.** Kies één koplamp, ga terug naar de categorieën en open **Bike bags**. De teller toont **0 of 2 selected**. Kies Frame 2 en Tour 18, leg Tour 18 in de mand en verwijder haar. Vanuit de lege mand kom je terug bij de fietstassen en kun je opnieuw kiezen. [Open de lege mand](prototype:basket?role=cyclist&state=empty&record=none-bags).
 - **Bestaande route.** Voeg in de eigen webshop één Stad 400 vanaf de productpagina toe. Voor die afzonderlijke regressiecontrole verwacht je één Stad 400 voor €39 op de bevestiging. De uitkomst moet in de testomgeving van die webshop worden vastgesteld.
 
@@ -71,10 +71,10 @@ Start de site met `pnpm dev`. Voer `pnpm run test:shop` uit in `packages/prototy
 
 **Geteste versie.** De lokale demo bevat zes schermen en negen producten in `public/prototypes/bike-shop/`. Start de documentatiesite met `pnpm dev` en open de demo vanuit de tutorial. [Begin in de winkel](prototype:store?role=cyclist&state=ready&record=categories).
 
-**Resultaat.** Alle twintig Chrome-browsertests zijn geslaagd. Vanuit de Nederlandse tutorial op telefoonformaat en de Engelse op desktopformaat zijn de negen paren, een bestelling per model en het wisselen van categorie en leegmaken van de mand gecontroleerd. De winkelier kan de drie categorieën nu met fictieve bestelgegevens demonstreren.
+**Resultaat.** Alle twintig Chrome-browsertests zijn geslaagd. Vanuit de Nederlandse tutorial op telefoonformaat en de Engelse op desktopformaat zijn de negen paren, een bestelling per model en het wisselen van categorie en leegmaken van de mand gecontroleerd. De klant kan de drie categorieën nu met fictieve bestelgegevens demonstreren.
 
 ## Releasebeoordeling voor de bestaande winkel {#release}
 
-**Klaar voor de winkelreview.** De winkelier kan vanuit elke categorie twee modellen vergelijken en één ervan bestellen. De bevestiging toont bijvoorbeeld één Tour 18 van €79 of één Beugel 23 van €59. [Bekijk de bevestiging voor Beugel 23](prototype:confirmation?role=cyclist&state=ready&record=beugel-23).
+**Klaar voor de review met de klant.** Een webshopbezoeker kan vanuit elke categorie twee modellen vergelijken en één ervan bestellen. De bevestiging toont bijvoorbeeld één Tour 18 van €79 of één Beugel 23 van €59. [Controleer het aantal en de prijs op de bestelbevestiging](prototype:confirmation?role=cyclist&state=ready&record=beugel-23).
 
-**Open voor publicatie.** Leg in de implementatie-PR van de bestaande webshop de geteste build, de specversie en de uitkomst van de aankoop via de oorspronkelijke productpagina vast. De winkelier kan na de review beslissen over een derde vergelijkingskolom.
+**Open voor publicatie.** Leg in de implementatie-PR van de bestaande webshop de geteste build, de specversie en de uitkomst van de aankoop via de oorspronkelijke productpagina vast. De klant kan na de review beslissen over een derde vergelijkingskolom.

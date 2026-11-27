@@ -4,7 +4,7 @@ Ask a second reviewer to examine a consequential technical assumption before the
 
 ## Example prompt
 
-> We assume the selected light stays the same when the mobile comparison reorders its cards. Have an independent reviewer test that assumption by reversing the product order and selecting Route 800 again.
+> We assume restarting after an interruption never sends a duplicate reminder. Give an independent reviewer the sending code and that claim. Look for a counterexample, such as a stop between sending and saving, and check whether it actually occurs.
 
 ## What do you get?
 

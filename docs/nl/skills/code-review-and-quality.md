@@ -4,7 +4,7 @@ Bekijk een diff vóór het samenvoegen. Controleer of de wijziging het afgesprok
 
 ## Voorbeeldvraag
 
-> Review de wijziging aan de mobiele vergelijkingskaart. Volg de gekozen product-ID tot in de mand. Blijft de keuze voor Route 800 correct als de producten in een andere volgorde staan? Wijs de relevante test aan.
+> Review de diff voor het sorteren van de takenlijst. Selecteer één taak en sorteer daarna op deadline. Werkt de actie ‘Afronden’ nog op de geselecteerde taak? Wijs bij een bevinding de betreffende regel en de ontbrekende test aan.
 
 ## Wat krijg je?
 

@@ -4,7 +4,7 @@ Bepaal welke signalen de wachtdienst nodig heeft wanneer een feature live gaat o
 
 ## Voorbeeldvraag
 
-> Bij een testbestelling komt soms geen bevestiging in beeld. Hoe kunnen we zien of de bestelling is opgeslagen en waar de bevestiging vastloopt? Gebruik een testbestelnummer om de stappen te volgen.
+> Een export blijft soms op ‘In behandeling’ staan. Welke signalen laten zien of de opdracht in de wachtrij blijft, de verwerking stopt of de statusupdate ontbreekt? Gebruik één testexport om de opdracht van aanvraag tot download te volgen.
 
 ## Wat krijg je?
 

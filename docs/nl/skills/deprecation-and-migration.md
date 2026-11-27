@@ -4,7 +4,7 @@ Plan de overgang wanneer een nieuw veld, een nieuwe API of een nieuw systeem tij
 
 ## Voorbeeldvraag
 
-> Onze oudere mandregels bewaren de naam van het fietslicht. We willen voortaan de vaste product-ID bewaren. Stel een migratie voor en laat met een oude mand met Route 800 zien hoe de overgang werkt.
+> In opgeslagen meldingen staat de ontvanger nu als gebruikersnaam. We willen voortaan de vaste gebruikers-ID opslaan. Plan de overstap terwijl oude en nieuwe appversies naast elkaar draaien. Hoe controleren we dat bestaande meldingen de juiste persoon blijven bereiken?
 
 ## Wat krijg je?
 

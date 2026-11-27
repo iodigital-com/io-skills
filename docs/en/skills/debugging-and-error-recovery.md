@@ -4,7 +4,7 @@ Investigate unexpected behaviour when a test fails, a build breaks or a previous
 
 ## Example prompt
 
-> On mobile I choose the second light, Route 800, but the basket contains Stad 400. Reproduce this with an empty basket. Trace the product ID from the button to the basket line and identify where it first changes.
+> After I rename a document, the list shows the new title. When I reload the page, the old title returns. Reproduce this with a local test document. Trace the title from the form through storage to reload and identify where it first differs.
 
 ## What do you get?
 

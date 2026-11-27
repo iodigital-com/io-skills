@@ -4,7 +4,7 @@ Check how to use a library or framework against the official documentation for t
 
 ## Example prompt
 
-> Check the official documentation for our installed router to see how a comparison link preserves both product IDs across a reload. Name the relevant API and apply it to Stad 400 and Route 800.
+> Our search page loses its selected filter after a reload. Find the router version in the project and check its official documentation for query parameter support. Show how to preserve the ‘Open’ filter in a shareable URL and link to the source.
 
 ## What do you get?
 

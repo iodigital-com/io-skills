@@ -4,7 +4,7 @@ Review a diff before merging. Check that the change delivers the agreed behaviou
 
 ## Example prompt
 
-> Review the mobile comparison card change. Follow the selected product ID through to the basket. Does choosing Route 800 still work if the products appear in a different order? Point to the test that covers this.
+> Review the diff that adds sorting to the task list. Select a task, then sort by due date. Does ‘Complete’ still act on the selected task? For any finding, identify the relevant line and the missing test.
 
 ## What do you get?
 

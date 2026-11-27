@@ -4,7 +4,7 @@ Turn a concrete spec into work that teammates can pick up. Use this when the seq
 
 ## Example prompt
 
-> Break our bike shop spec into small tasks. What agreement about product IDs and prices do we need before building the comparison page and basket in parallel? Give each task a check using Route 800.
+> Our spec lets a team member assign a task and sends the assignee a notification. Break this into small tasks, each with a visible result. What must the teams agree on before they can build assignment and notification in parallel?
 
 ## What do you get?
 

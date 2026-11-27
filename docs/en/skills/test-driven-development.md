@@ -4,7 +4,7 @@ Start with the outcome you want to demonstrate when fixing a defect or changing 
 
 ## Example prompt
 
-> Start with a behaviour test for the new bag comparison. Select Frame 2 and Stuur 5. Check that the Stuur 5 shows “5 L” for Capacity and “Handlebar” for Mounting point and that its purchase button adds one bag at €49. Show the test exposing the missing behaviour, build the feature and rerun it.
+> An invitation is valid for 24 hours. First write a test with a fixed clock for an invitation sent yesterday at 10:00. At 09:59 it still works, at 10:00 it has expired. Show the test failing, update the expiry check and rerun it.
 
 ## What do you get?
 

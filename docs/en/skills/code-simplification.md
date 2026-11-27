@@ -4,7 +4,7 @@ Make a working function easier to read when branches or duplication make its beh
 
 ## Example prompt
 
-> The mobile and wide comparison views each determine which light to add to the basket in a different way. Simplify the code and verify the result for both models at both widths.
+> The create and edit forms each validate an end date in their own way. For each form, record what happens with a blank date, an end date before the start date and two equal dates. Simplify the duplicated logic and recheck those cases.
 
 ## What do you get?
 

@@ -2,9 +2,9 @@
 
 These are the work products for the new comparison feature. The children’s bike shop sells front lights, bike bags and bike locks to families. One tutorial starts with an empty project for a working prototype. The other adds the feature to the existing shop.
 
-## The shop owner’s brief {#briefing}
+## The client’s brief {#briefing}
 
-**The request.** “My customers have already found the right department. Can they put two models side by side on their phone and order the one they choose?”
+**The client’s request.** “Shoppers have already found the right category in our online shop. Can they put two models side by side on their phone and order the one they choose?”
 
 **What informs the choice?** A parent riding to school with her child in winter wants to know how bright each light is and how long it lasts on the highest setting. For a bag, she needs to know whether it holds a lunchbox and raincoat and where it attaches to the bike. For a lock, the type and length matter. Price and availability appear in every comparison.
 
@@ -15,14 +15,14 @@ These are the work products for the new comparison feature. The children’s bik
 The shop in the brief already sells through its categories, product pages, basket and checkout. The comparison adds an entry point to that basket.
 
 - **Product data.** In the demo, `shop/catalog.js` groups nine models by category. Each has an ID and a price. For Frame 2 these are `frame-2` and €29. The bag also has a capacity of 2 litres and mounts to the frame. Lights use lumens and runtime on the highest setting. Locks use type and length in centimetres.
-- **Purchase action.** In `shop/shop.js`, each button in `comparisonPage()` passes the product ID from its own column. The basket uses it for the name and price. [Open the basket with Frame 2](prototype:basket?role=cyclist&state=ready&record=frame-2).
-- **Still to verify with the retailer.** Check the original product-page purchase action in the shop’s application. Have the retailer confirm the units and test setting before placing source values in the same comparison row.
+- **Purchase action.** In `shop/shop.js`, each button in `comparisonPage()` passes the product ID from its own column. The basket uses it for the name and price. [Check that the selected bag is in the basket](prototype:basket?role=cyclist&state=ready&record=frame-2).
+- **Still to verify with the client.** Check the original purchase action on the shop’s product page. Ask the client to confirm the units and test setting before placing source values in the same comparison row.
 
 ## Review decision on runtime {#review-decision}
 
-**Observation.** After scrolling, a shop colleague reads ‘3 hours’ under the Route 800. The copy explaining the test setting above the table is off screen.
+**Observation.** During the review, the client scrolls down and reads ‘3 hours’ under the Route 800. The copy explaining the test setting above the table is off screen.
 
-**Decision and acceptance check.** Include the setting with each value. At phone width, the Stad 400 cell reads ‘2 hours on the highest setting’ and the Route 800 cell reads ‘3 hours on the highest setting’. This decision applies to the runtime row in Front lights. [View the two cells at phone width](prototype:compare?role=cyclist&state=ready&record=lights&format=phone).
+**Decision and acceptance check.** Include the setting with each value. At phone width, the Stad 400 cell reads ‘2 hours on the highest setting’ and the Route 800 cell reads ‘3 hours on the highest setting’. This decision applies to the runtime row in Front lights. [Check the brightness setting beside each value on a phone](prototype:compare?role=cyclist&state=ready&record=lights&format=phone).
 
 ## Build plan for the standalone prototype {#plan-new}
 
@@ -58,7 +58,7 @@ Start the site with `pnpm dev`. Run `pnpm run test:shop` in `packages/prototype-
 
 ## Tests for the new and existing purchase routes {#test-existing}
 
-- **New comparison.** Both language paths were tested with all nine pairs in the same English shop. One purchase per pair took every product through the basket to confirmation. [View the Stuur 5 confirmation](prototype:confirmation?role=cyclist&state=ready&record=stuur-5).
+- **New comparison.** Both language paths were tested with all nine pairs in the same English shop. One purchase per pair took every product through the basket to confirmation. [Check the selected item on the order confirmation](prototype:confirmation?role=cyclist&state=ready&record=stuur-5).
 - **Category change.** Select one light, return to the shop and open Bike bags. The count starts at zero. Select Frame 2 and Tour 18, add Tour 18 to the basket and remove it. The empty basket leads back to the bags for a fresh choice. [Open the empty basket](prototype:basket?role=cyclist&state=empty&record=none-bags).
 - **Existing route.** In the original shop, add one Stad 400 from its product page. That separate regression check expects one Stad 400 at €39 on confirmation. Run it in the existing shop’s test environment.
 
@@ -71,10 +71,10 @@ Start the site with `pnpm dev`. Run `pnpm run test:shop` in `packages/prototype-
 
 **Tested version.** The local demo has six screens and nine products in `public/prototypes/bike-shop/`. Run the documentation site with `pnpm dev` and open the demo from the tutorial. [Start in the shop](prototype:store?role=cyclist&state=ready&record=categories).
 
-**Result.** All 20 Chrome browser tests passed. The Dutch tutorial path at phone width and the English path at desktop width covered the nine pairs, an order for each model, changing categories and emptying the basket. The retailer can demonstrate all three categories with fictional order details.
+**Result.** All 20 Chrome browser tests passed. The Dutch tutorial path at phone width and the English path at desktop width covered the nine pairs, an order for each model, changing categories and emptying the basket. The client can demonstrate all three categories with fictional order details.
 
 ## Release assessment for the existing shop {#release}
 
-**Ready for the retailer’s review.** A shopper can choose any two models within each category and order either one. The confirmation shows, for example, one Tour 18 at €79 or one Beugel 23 at €59. [View the Beugel 23 confirmation](prototype:confirmation?role=cyclist&state=ready&record=beugel-23).
+**Ready for the client’s review.** A shopper can choose any two models within each category and order either one. The confirmation shows, for example, one Tour 18 at €79 or one Beugel 23 at €59. [Check the quantity and price on the order confirmation](prototype:confirmation?role=cyclist&state=ready&record=beugel-23).
 
-**Before publication.** Record the tested build, spec version and outcome of the original product-page purchase in the shop’s implementation PR. The retailer can decide after the review whether to add a third comparison column.
+**Before publication.** Record the tested build, spec version and outcome of the original product-page purchase in the shop’s implementation PR. The client can decide after the review whether to add a third comparison column.

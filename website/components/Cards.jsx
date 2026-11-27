@@ -1,34 +1,11 @@
-import {
-  BookOpen,
-  Braces,
-  ClipboardCheck,
-  Compass,
-  FileText,
-  FlaskConical,
-  Layers,
-  PanelsTopLeft,
-  Rocket,
-  ScanEye,
-} from 'lucide-react'
+import { BookOpen, Layers } from 'lucide-react'
 import { href } from '../paths.mjs'
+import { PhaseLabel } from './Phase'
 
-const groupIcons = {
-  define: FileText,
-  design: PanelsTopLeft,
-  build: Braces,
-  verify: FlaskConical,
-  review: ScanEye,
-  ship: Rocket,
-  general: Compass,
-}
 export function SkillCard({ lang, copy, skill }) {
-  const Icon = groupIcons[skill.group] || ClipboardCheck
   return (
-    <a className="skill-card" href={href(lang, 'skills/' + skill.id)}>
-      <span className={'phase-label phase-' + skill.group}>
-        <Icon size={16} />
-        {copy.groups[skill.group]}
-      </span>
+    <a className="skill-card" data-phase={skill.group} href={href(lang, 'skills/' + skill.id)}>
+      <PhaseLabel phase={skill.group} copy={copy} />
       <h3>{skill.title}</h3>
       <p>{skill.intro}</p>
       <code>{skill.id}</code>

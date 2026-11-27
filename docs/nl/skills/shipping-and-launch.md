@@ -4,7 +4,7 @@ Maak de afspraken voor uitrol en herstel concreet voordat een feature in product
 
 ## Voorbeeldvraag
 
-> We willen de aangepaste mobiele productvergelijking geleidelijk uitrollen. Welke signalen laten zien dat het gekozen fietslicht in de mand komt? Beschrijf hoe we bij een probleem de vorige weergave herstellen.
+> Ons nieuwe aanvraagformulier staat achter een featureflag. We willen het eerst bij één team invoeren. Leg vast wie de eerste inzendingen volgt, welke signalen bepalen of we uitbreiden en hoe we naar het oude formulier teruggaan met behoud van ingediende aanvragen.
 
 ## Wat krijg je?
 

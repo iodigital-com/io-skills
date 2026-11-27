@@ -4,7 +4,7 @@ Geef een agent de projectkennis die nodig is voor een taak, bijvoorbeeld wanneer
 
 ## Voorbeeldvraag
 
-> We voegen een vergelijker toe aan onze bestaande fietswebshop. Waar vind ik de categorie-indeling, de productkenmerken, de huidige bestelknop en de test voor één artikel in de mand? Geef een nieuwe sessie de geldende spec en alleen de bestanden die ze hiervoor nodig heeft.
+> Een nieuwe agentsessie moet het e-mailadres op de profielpagina bewerkbaar maken. Zoek de geldende spec, het profielscherm, de opslagcode en de relevante test. Geef per bestand aan waarom de agent het nodig heeft en hoe die de test lokaal uitvoert.
 
 ## Wat krijg je?
 

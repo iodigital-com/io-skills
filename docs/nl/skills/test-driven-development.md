@@ -4,7 +4,7 @@ Begin bij het resultaat dat je wilt kunnen aantonen wanneer je een fout herstelt
 
 ## Voorbeeldvraag
 
-> Schrijf eerst een gedragstest voor de nieuwe tassenvergelijking. Selecteer Frame 2 en Stuur 5. Controleer of de Stuur 5 bij ‘Capacity’ de waarde ‘5 L’ toont en bij ‘Mounting point’ de waarde ‘Handlebar’ en of de bijbehorende bestelknop één tas van €49 toevoegt. Laat de test het ontbrekende gedrag aantonen, bouw de functie en voer hem opnieuw uit.
+> Een uitnodiging is 24 uur geldig. Schrijf eerst een test met een vaste klok voor een uitnodiging die gisteren om 10.00 uur is verstuurd. Om 09.59 uur werkt ze nog, om 10.00 uur is ze verlopen. Laat de test falen, pas de geldigheidscontrole aan en voer hem opnieuw uit.
 
 ## Wat krijg je?
 

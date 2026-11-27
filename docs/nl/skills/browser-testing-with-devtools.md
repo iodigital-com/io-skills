@@ -4,7 +4,7 @@ Onderzoek een scherm terwijl het draait. Met een aangesloten Chrome DevTools MCP
 
 ## Voorbeeldvraag
 
-> Open op telefoonbreedte de categorie ‘Bike locks’. Vergelijk Kabel 90 en Beugel 23 op prijs, type en lengte. Kies Beugel 23 en controleer of je op de testbevestiging één beugelslot van €59 ziet.
+> Open de takenlijst op telefoonbreedte en filter op ‘Open’. Vernieuw de pagina. Controleer of het filter actief blijft en alleen open taken verschijnen. Noteer de URL en de netwerkrequest als de resultaten afwijken.
 
 ## Wat krijg je?
 
