@@ -6,7 +6,7 @@ Bij [spec-driven werken](../workflow.md) kies je per afspraak hoe je die toetst.
 
 ## De skill klaarzetten
 
-Open een terminal in de map van je app. Begin je helemaal opnieuw, maak dan een lege projectmap en open daar je terminal. Installeer de skill op projectniveau met het volgende commando en kies je eigen agent. De [installatiegids](../guides/install.md) beschrijft de benodigde GitHub-toegang.
+Open een terminal in de map van je app. Begin je helemaal opnieuw, maak dan een lege projectmap en open daar je terminal. Installeer de skill op projectniveau met het volgende commando en kies je eigen agent. In de [installatiegids](../guides/install.md) lees je hoe je de installatie controleert.
 
 ```sh
 npx skills add iodigital-com/io-skills --skill prototype-shell

@@ -47,8 +47,8 @@ The bilingual requirement covers **website content**. Internal build specificati
 
 ## Website implementation
 
-- The first website runs locally with Next.js. Its static build supports a future Vercel deployment. The homepage follows the information order of Addy Osmani’s skills site. Its workflow shows when to use each skill. Both tutorials teach the method using an accessory comparison feature for a fictional children's bike shop. The Wobble Wheel storefront has its own visual identity. Each prompt links to its worked result in the English review shell. A reader can compare the design with the running screen, inspect a decision or test result, then return to the same prompt. Readers can also adapt the shell skill’s separate starter to their own project.
-- A colleague with read access to the iO GitHub repository installs from the target project with `npx skills add iodigital-com/io-skills`. The installation guide and catalog use the same GitHub source for the collection and for individual skills.
+- The website runs locally with Next.js. Pushes to `main` trigger the GitHub Actions production workflow for the Prophets Vercel team. The homepage follows the information order of Addy Osmani’s skills site. Its workflow shows when to use each skill. Both tutorials teach the method using an accessory comparison feature for a fictional children's bike shop. The Wobble Wheel storefront has its own visual identity. Each prompt links to its worked result in the English review shell. A reader can compare the design with the running screen, inspect a decision or test result, then return to the same prompt. Readers can also adapt the shell skill’s separate starter to their own project.
+- A colleague installs from the public iO repository by running `npx skills add iodigital-com/io-skills` in the target project. The installation guide and catalog use the same GitHub source for the collection and for individual skills.
 
 ## Initial library
 

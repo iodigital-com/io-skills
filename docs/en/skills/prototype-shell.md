@@ -6,7 +6,7 @@ In [spec-driven development](../workflow.md), you choose how to check each agree
 
 ## Set up the skill
 
-Open a terminal in your app’s directory. If you are starting from scratch, create an empty project directory and open your terminal there. Run the following command, choose your agent and install the skill at project level. The [installation guide](../guides/install.md) explains the GitHub access you need.
+Open a terminal in your app’s directory. If you are starting from scratch, create an empty project directory and open your terminal there. Run the following command, choose your agent and install the skill at project level. The [installation guide](../guides/install.md) explains how to check the installation.
 
 ```sh
 npx skills add iodigital-com/io-skills --skill prototype-shell

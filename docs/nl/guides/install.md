@@ -1,10 +1,6 @@
 # De skills installeren
 
-Installeer één skill of de hele iO-bibliotheek in je project. Je hebt Node.js met `npx` en een lokale projectmap nodig.
-
-## Toegang tot GitHub
-
-De [iO Skills-repository](https://github.com/iodigital-com/io-skills) is privé. Je hebt een GitHub-account met leestoegang nodig. Zorg dat Git in je terminal dat account gebruikt.
+Installeer één skill of de hele bibliotheek vanuit de [publieke iO Skills-repository](https://github.com/iodigital-com/io-skills). Je hebt Node.js met `npx` en een lokale projectmap nodig.
 
 ## Kies wat je installeert
 

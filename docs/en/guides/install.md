@@ -1,10 +1,6 @@
 # Install the skills
 
-Install one skill or the whole iO library in your project. You will need Node.js with `npx` and a local project folder.
-
-## GitHub access
-
-The [iO Skills repository](https://github.com/iodigital-com/io-skills) is private. You need a GitHub account with read access and Git configured to use that account in your terminal.
+Install one skill or the whole library from the [public iO Skills repository](https://github.com/iodigital-com/io-skills). You will need Node.js with `npx` and a local project folder.
 
 ## Choose what to install
 

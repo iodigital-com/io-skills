@@ -9,3 +9,5 @@ node_modules/
 /public/prototypes/bike-shop/review-splitter.css
 
 .DS_Store
+.vercel
+.env*

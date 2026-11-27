@@ -5,7 +5,7 @@
 
 ## Skills
 
-Run these commands from the project where you want to use the skills. While the [iO Skills repository](https://github.com/iodigital-com/io-skills) is private, Git needs to be signed in with an account that has read access. Choose your agent when prompted and install at project level.
+Run these commands from the project where you want to use the skills. They install from the [public iO Skills repository](https://github.com/iodigital-com/io-skills). Choose your agent when prompted and install at project level.
 
 ```sh
 # Browse the library
@@ -57,4 +57,6 @@ Both tutorials link each worked prompt to its result in the [Wobble Wheel kidsâ€
 
 `pnpm build` validates paired content and exports the Next.js website to `out/`.
 
-For a future Vercel deployment, use the project root, the Next.js framework preset and `pnpm build` as the build command.
+The [production workflow](.github/workflows/deploy.yml) runs the prototype tests on pushes to `main`, then deploys to [io-skills on the Prophets Vercel team](https://vercel.com/prophets/io-skills). Vercel builds the site from the project root with Node.js 22 and `pnpm build`.
+
+GitHub Actions reads the team and project IDs from the repository variables `VERCEL_ORG_ID` and `VERCEL_PROJECT_ID`. Store a Vercel token scoped to this project in the Actions secret `VERCEL_TOKEN`. To retry a deployment, rerun the workflow on `main`.

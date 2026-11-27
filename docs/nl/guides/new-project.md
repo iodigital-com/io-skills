@@ -16,7 +16,7 @@ De demo gebruikt de iO-shell om te laten zien hoe een afspraak uit de spec uitpa
 
 [Probeer de webshop in de prototypeshell](/prototypes/bike-shop/index.html?lang=nl&screen=store&role=cyclist&state=ready&record=categories&format=phone&scenario=buy-light). Kies op de winkelpagina ‘Front lights’, selecteer Stad 400 en Route 800, kies ‘Compare lights’ en plaats een testbestelling met één lamp. De webshop, de reviewomgeving, de productspec en de designspec in deze demo zijn Engelstalig. De functionele uitleg en de voorbeeldresultaten lees je hier in het Nederlands.
 
-Begin in een lege projectmap. Met [toegang tot de iO Skills-repository](install.md) kun je dit commando uitvoeren. Kies je agent als daarom wordt gevraagd en start in die map een sessie. Neem de prompts één voor één over. Werk je aan een eigen project, kies dan één taak uit je briefing. Gebruik je eigen gebruikers, hun handelingen en het resultaat dat ze verwachten.
+[Installeer de iO-skills](install.md) met het onderstaande commando in een lege projectmap. Kies je agent als daarom wordt gevraagd en start in die map een sessie. Neem de prompts één voor één over. Werk je aan een eigen project, kies dan één taak uit je briefing. Gebruik je eigen gebruikers, hun handelingen en het resultaat dat ze verwachten.
 
 ```sh
 npx skills add iodigital-com/io-skills --skill '*'

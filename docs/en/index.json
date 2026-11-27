@@ -71,7 +71,7 @@
     "general": "Cross-cutting"
   },
   "installSkill": "Install this skill",
-  "installIntro": "Run this command in your project directory using a GitHub account with access to the iO Skills repository.",
+  "installIntro": "Run this command in your project directory. Choose your agent when prompted.",
   "installDocs": "Installation guide",
   "installAll": "Install the full library",
   "projectIntent": "Project goals",

@@ -71,7 +71,7 @@
     "general": "Overkoepelend"
   },
   "installSkill": "Installeer deze skill",
-  "installIntro": "Voer dit commando uit in je projectmap met een GitHub-account dat toegang heeft tot de iO Skills-repository.",
+  "installIntro": "Voer dit commando uit in je projectmap. Tijdens de installatie kies je je eigen agent.",
   "installDocs": "Installatiegids",
   "installAll": "De volledige bibliotheek installeren",
   "projectIntent": "Projectdoel",

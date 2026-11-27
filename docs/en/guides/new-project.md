@@ -16,7 +16,7 @@ The demo uses the iO shell to show what an agreement in the spec means when you 
 
 [Try the shop in the prototype shell](/prototypes/bike-shop/index.html?lang=en&screen=store&role=cyclist&state=ready&record=categories&format=phone&scenario=buy-light). Choose Front lights on the shop page, select Stad 400 and Route 800, choose ‘Compare lights’ and place a test order for one light. The demo uses English for its shop, review controls, product spec and design spec. The functional walkthrough and prompt results follow the tutorial language.
 
-Start in an empty project directory. With [access to the iO Skills repository](install.md), run this command, choose your agent when prompted and start a session in that directory. Paste one prompt at a time. For your own project, choose one task from your brief. Use your own users, the actions they take and the result they expect.
+[Install the iO skills](install.md) by running the command below in an empty project directory. Choose your agent when prompted and start a session in that directory. Paste one prompt at a time. For your own project, choose one task from your brief. Use your own users, the actions they take and the result they expect.
 
 ```sh
 npx skills add iodigital-com/io-skills --skill '*'
