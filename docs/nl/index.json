@@ -32,7 +32,7 @@
   "prototypeReview": {
     "label": "Prototype-UI",
     "title": "Prototype, ontwerp en documentatie naast elkaar",
-    "intro": "Laat de klant een taak uitproberen. Naast het werkende scherm lees je wat jullie in de spec hebben afgesproken. Kom je iets tegen dat je wilt bespreken? Deel de link en je collega ziet hetzelfde scherm met dezelfde voorbeeldgegevens.",
+    "intro": "Met een prototype maak je een idee concreet vóór je begint te bouwen. Samen met de klant zie je of de stappen logisch zijn en wat er nog ontbreekt. Zo kun je de laatste open vragen beantwoorden en de spec aanscherpen.",
     "setup": "Gebruik de prototype-UI in je project",
     "imageAlt": "De reviewomgeving met een productvergelijking op telefoonformaat en de bijbehorende designspec ernaast.",
     "openDemo": "Open dit scherm in de demo"
