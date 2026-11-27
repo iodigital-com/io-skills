@@ -10,6 +10,8 @@ Geef de klant en het projectteam een werkend voorbeeld om samen te verkennen. De
 
 De skill bevat het werkende voorbeeld en instructies om een scherm uit je eigen stack aan te sluiten. Wissel tijdens de review van persona of schermformaat terwijl de FA op dezelfde alinea blijft staan. Open een gekopieerde link in een verse browsersessie om te controleren wat je collega ziet.
 
+Op je telefoon vult het prototype het scherm. Tik op **Prototype** om de spec te lezen of de toestand te wijzigen. Sluit het paneel om verder te testen. Op desktop kun je de scheidingslijn naar links slepen om de documentatie meer leesruimte te geven. Met het toetsenbord bereik je de scheidingslijn via Tab en pas je de breedte aan met de pijltjestoetsen.
+
 ## Probeer het voorbeeld
 
 Installeer `prototype-shell` in je project volgens de [installatiegids](../guides/install.md). Voer de commando’s hieronder uit in je projectmap om het voorbeeld aan te maken en lokaal te starten. Gebruikt je agent een ander pad dan `.agents/skills/prototype-shell`, vul dan de skillmap in die het installatieprogramma toont.

@@ -4,7 +4,8 @@
   "type": "module",
   "scripts": {
     "test": "node --test shared-link.test.js",
-    "test:shop": "node --test shop.test.js"
+    "test:shop": "node --test shop.test.js",
+    "test:layout": "node --test responsive-review.test.js"
   },
   "devDependencies": {
     "esbuild": "0.28.2",

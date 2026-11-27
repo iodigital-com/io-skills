@@ -32,6 +32,14 @@ The project defines which combinations of screen, persona, state and example rec
 
 Every project defines its preview formats. Mobile, tablet and desktop are useful starting presets for a website. One phone preset is sufficient for an app built for one target. The project supplies their dimensions and labels.
 
+## Reviewing on a phone or desktop
+
+On a phone, opening a scenario or shared situation gives the interactive prototype the full browser viewport. The site responds to the actual device width. A single compact **Prototype** button opens the review controls and documentation. The selected preview format still travels with a shared link and applies in the desktop workspace. Opening the general project link on either device shows the feature overview.
+
+The phone panel gives access to the screen picker, supported personas and states, sharing and project documents. Closing it returns to the same situation, including any text being edited. Reopening it restores the reader's place. In projects with direct links to a document or passage, following one on a phone opens the panel at that content. Following a situation link inside the document returns to the preview.
+
+In the side-by-side desktop layout, the reader can drag the divider towards the preview to widen the documentation, then drag it back. The divider is also keyboard accessible. Both panes remain usable throughout. Adjusting the divider preserves the active situation, preview interaction and open document.
+
 ## Reading the FA alongside the prototype
 
 The document pane and the preview can be navigated independently. Following a situation link in the open FA changes the preview and leaves the reader at the same passage. Changing screen, persona, state or format also keeps that passage open.
@@ -66,6 +74,8 @@ Run the walkthrough in one working example prototype. Use a feature called **Rev
 
 | Try this | What the reviewer must observe |
 | --- | --- |
+| Open a situation on a phone. Enter some text and open **Prototype**. Read the explanation, close the panel and reopen it. | The site initially fills the viewport with a single review button. The text, selected record and reading position survive opening and closing the controls. |
+| On desktop, drag the divider towards the preview, then narrow the document using the keyboard. | The document reflows to its new width and the preview stays usable in the same situation. |
 | Open the project overview and select **Improve a returned request**. | The preview opens request 104 as the applicant, with its return reason visible. The reviewer can freely use the screen. |
 | As the applicant, switch request 104 to draft and back to returned. | Each change preserves the request and applicant persona. The available controls match the chosen state. |
 | Switch to the reviewer persona. | The same request and reason remain visible. Available actions reflect the reviewer, and the applicant-only draft state is absent from the choices. |

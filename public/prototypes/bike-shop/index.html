@@ -2,11 +2,13 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <meta name="color-scheme" content="dark">
   <title>Wobble Wheel · Prototype review</title>
   <link rel="icon" href="./review-mark.svg" type="image/svg+xml">
   <link rel="stylesheet" href="./shell.css">
+  <link rel="stylesheet" href="./review-splitter.css">
+  <script type="module" src="./review-splitter.js"></script>
   <script type="module" src="./shell.js"></script>
 </head>
 <body>
@@ -61,13 +63,16 @@
             <iframe id="preview" title="Shop"></iframe>
           </div></div></div>
         </section>
+        <div class="review-splitter" role="separator" aria-label="Documentation width" aria-controls="document-content" aria-orientation="vertical" tabindex="0" title="Drag to resize documentation"></div>
         <div class="review-aside">
           <details class="panel controls" id="controls">
             <summary data-text="settings"></summary>
             <div class="toolbar">
+              <label class="mobile-field" id="mobile-screen-field"><span>Screen</span></label>
               <label><span data-text="persona"></span><select id="role"></select></label>
               <label><span data-text="state"></span><select id="state"></select></label>
               <label class="record"><span data-text="record"></span><select id="record"></select></label>
+              <label class="mobile-field" id="mobile-format-field"><span>Shared preview format</span></label>
             </div>
           </details>
           <section class="panel doc-panel" aria-labelledby="docs-heading">
@@ -77,6 +82,20 @@
           </section>
         </div>
       </div>
+      <button id="mobile-review-toggle" type="button" aria-haspopup="dialog" aria-controls="mobile-review-panel" aria-expanded="false">
+        <span class="info-mark" aria-hidden="true">i</span> Prototype
+      </button>
+      <dialog id="mobile-review-panel" aria-labelledby="mobile-panel-title">
+        <div class="mobile-panel-head">
+          <h2 id="mobile-panel-title">Prototype</h2>
+          <button id="mobile-review-close" type="button" autofocus>Close</button>
+        </div>
+        <div class="mobile-panel-body">
+          <div id="mobile-review-content"></div>
+          <nav id="mobile-review-links" aria-label="Review navigation"></nav>
+          <div id="mobile-review-share"></div>
+        </div>
+      </dialog>
     </section>
     <noscript><p>Enable JavaScript to open the shop.</p></noscript>
   </main>

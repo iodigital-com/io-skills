@@ -1,5 +1,12 @@
 import { cpSync, rmSync } from 'node:fs'
 
+for (const file of ['mobile-review.js', 'review-splitter.js', 'review-splitter.css']) {
+  cpSync(
+    new URL('../../skills/prototype-shell/assets/starter/' + file, import.meta.url),
+    new URL('../../public/prototypes/bike-shop/' + file, import.meta.url)
+  )
+}
+
 for (const lang of ['nl', 'en']) {
   cpSync(
     new URL('../../docs/' + lang + '/prototypes/bike-shop/', import.meta.url),

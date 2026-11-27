@@ -2,11 +2,13 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <meta name="color-scheme" content="light">
   <title>Prototype review</title>
   <link rel="icon" href="data:,">
   <link rel="stylesheet" href="./shell.css">
+  <link rel="stylesheet" href="./review-splitter.css">
+  <script type="module" src="./review-splitter.js"></script>
   <script type="module" src="./shell.js"></script>
 </head>
 <body>
@@ -18,7 +20,7 @@
         <img id="logo" alt="" hidden>
         <span id="project-name">Prototype review</span>
       </a>
-      <nav aria-label="Workspace">
+      <nav id="workspace-nav" aria-label="Workspace">
         <a href="./" id="overview-link">Overview</a>
         <span class="mast-divider" aria-hidden="true"></span>
         <label class="screen-picker">
@@ -59,7 +61,7 @@
       <div class="toolbar" aria-label="Situation controls" role="group">
         <label>Persona<select id="role"></select></label>
         <label>State<select id="state"></select></label>
-        <label>Format<select id="format"></select></label>
+        <label><span class="preset-label">Format</span><span class="share-format-label">Shared preview format</span><select id="format"></select></label>
         <div class="record"><span>Example record</span><strong id="record"></strong></div>
       </div>
 
@@ -70,6 +72,7 @@
             <iframe id="preview" title="Prototype preview"></iframe>
           </div></div></div>
         </section>
+        <div class="review-splitter" role="separator" aria-label="Documentation width" aria-controls="document-content" aria-orientation="vertical" tabindex="0" title="Drag to resize documentation"></div>
         <section class="panel doc-panel" aria-labelledby="docs-heading">
           <div class="panel-head"><h2 id="docs-heading">Documentation</h2><button id="open-spec" class="text-action" type="button" hidden>Open spec</button></div>
           <div class="doc-nav"><button type="button" class="secondary" id="open-explanation">Open explanation for this screen</button></div>
@@ -79,6 +82,21 @@
     </section>
     <noscript>Enable JavaScript to open the project overview and review a prototype.</noscript>
   </main>
+  <button id="mobile-review-toggle" type="button" aria-haspopup="dialog" aria-controls="mobile-review-panel" aria-expanded="false" hidden>
+    <span aria-hidden="true" class="info-symbol">i</span> Prototype
+  </button>
+  <dialog id="mobile-review-panel" aria-labelledby="mobile-review-title">
+    <header class="mobile-panel-head">
+      <h2 id="mobile-review-title">Prototype</h2>
+      <button id="mobile-review-close" type="button" autofocus>Close</button>
+    </header>
+    <div class="mobile-panel-content">
+      <div id="mobile-heading"></div>
+      <div id="mobile-navigation"></div>
+      <div id="mobile-settings"></div>
+      <div id="mobile-documentation"></div>
+    </div>
+  </dialog>
   <div id="status" class="sr-only" role="status"></div>
 </body>
 </html>

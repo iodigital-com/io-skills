@@ -123,6 +123,7 @@ h1 { line-height: 1.07; letter-spacing: -.045em; text-wrap: balance; }
 .fallback { margin-block-end: 1rem; }
 .notice { padding-block: 3.5rem; }
 .notice p { margin-block: 1rem; }
+#mobile-review-toggle, .toolbar .mobile-field { display: none; }
 
 @media (max-width: 840px) {
   .wrap, .mast-inner { width: calc(100% - 2rem); }
@@ -149,4 +150,61 @@ h1 { line-height: 1.07; letter-spacing: -.045em; text-wrap: balance; }
 }
 @media (pointer: coarse) {
   .mast nav a, button, select, .toolbar select, .format-picker select, .doc-nav a { min-height: 44px; }
+}
+
+@media (max-width: 767px), (pointer: coarse) and (orientation: landscape) and (max-height: 500px) {
+  .mobile-review-active { overflow: hidden; }
+  .mobile-review-active :is(.mast, .skip-link, .review-head, .preview-panel > .panel-head) { display: none; }
+  .mobile-review-active .review { width: 100%; padding: 0; }
+  .mobile-review-active .preview-panel {
+    position: fixed; inset: 0; height: 100%; height: 100dvh;
+    border: 0; border-radius: 0;
+  }
+  .mobile-review-active :is(.stage, #frame-area, #frame-size) {
+    height: 100%; max-height: none; padding: 0; overflow: hidden;
+    border-radius: 0; outline: 0;
+  }
+  .mobile-review-active #mobile-review-toggle {
+    position: fixed; z-index: 1;
+    bottom: max(.65rem, env(safe-area-inset-bottom));
+    right: max(.65rem, env(safe-area-inset-right));
+    display: inline-flex; align-items: center; gap: .4rem;
+    padding: .35rem .75rem; min-height: 44px; border: 1px solid var(--line); border-radius: 2rem;
+    color: var(--ink); background: var(--deep); box-shadow: 0 2px 8px #0003;
+    font-size: .8rem; font-weight: 650;
+  }
+  .info-mark {
+    display: inline-grid; place-items: center; width: 1rem; height: 1rem;
+    border: 1px solid currentColor; border-radius: 50%; color: var(--amber);
+    font: 700 .74rem/1 Georgia, serif;
+  }
+  #mobile-review-panel {
+    position: fixed; inset: auto 0 0; width: 100%; max-width: none; max-height: none;
+    height: 88%; height: min(88dvh, 52rem); margin: 0; padding: 0;
+    color: var(--ink); background: var(--page); border: 1px solid var(--line);
+    border-bottom: 0; border-radius: 16px 16px 0 0;
+  }
+  #mobile-review-panel[open] { display: flex; flex-direction: column; }
+  #mobile-review-panel::backdrop { background: rgb(10 17 17 / 55%); }
+  .mobile-panel-head {
+    display: flex; align-items: center; justify-content: space-between; gap: .75rem;
+    padding: .5rem max(1rem, env(safe-area-inset-right)) .5rem max(1rem, env(safe-area-inset-left));
+    border-bottom: 1px solid var(--line);
+  }
+  .mobile-panel-head h2 { font-size: 1.1rem; }
+  #mobile-review-close {
+    min-height: 44px; padding: .25rem .75rem; font-size: .87rem;
+    background: var(--panel); border: 1px solid var(--line); border-radius: 4px;
+  }
+  .mobile-panel-body {
+    flex: 1; min-height: 0; overflow: auto; overscroll-behavior: contain;
+    padding: .75rem max(.75rem, env(safe-area-inset-right)) max(1rem, env(safe-area-inset-bottom)) max(.75rem, env(safe-area-inset-left));
+  }
+  .toolbar .mobile-field { display: grid; }
+  #mobile-format-field { grid-area: 1 / 2; }
+  #mobile-review-panel :is(select, summary, .doc-nav a) { min-height: 44px; }
+  #mobile-review-panel .doc-content { height: min(55dvh, 30rem); padding: 1rem; }
+  #mobile-review-links { display: flex; flex-wrap: wrap; align-items: center; gap: 0 1.1rem; margin-top: .65rem; }
+  #mobile-review-links a { display: inline-flex; align-items: center; min-height: 44px; font-size: .86rem; }
+  #mobile-review-share .fallback { margin-block: .7rem 0; }
 }

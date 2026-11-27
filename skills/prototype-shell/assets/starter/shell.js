@@ -4,6 +4,7 @@ import {
   previewHref, prototypeSelection,
 } from './navigation.js';
 import { loadDocument } from './documents.js';
+import { createMobileReview } from './mobile-review.js';
 
 const el = (id) => document.getElementById(id);
 const docs = el('document-content');
@@ -17,7 +18,22 @@ let current;
 let frame = el('preview');
 let pinnedDocument;
 let pendingDocument;
+let pendingPassage;
 let copyReset;
+const mobileReview = createMobileReview({
+  parts: [
+    [document.querySelector('.review-head'), el('mobile-heading')],
+    [el('share-fallback'), el('mobile-heading')],
+    [el('workspace-nav'), el('mobile-navigation')],
+    [document.querySelector('.toolbar'), el('mobile-settings')],
+    [document.querySelector('.doc-panel'), el('mobile-documentation')],
+  ],
+  onOpen: revealPendingPassage,
+  onLayout() {
+    fitPreview();
+    revealPendingPassage();
+  },
+});
 
 function pretty(id) {
   const words = id.replace(/[-_]/g, ' ');
@@ -103,6 +119,16 @@ function choose(selection) {
 
 function fitPreview() {
   if (!current) return;
+  if (mobileReview.active) {
+    // Project formats describe a simulated viewport on larger screens. A
+    // handset uses its real viewport and keeps the preset in the share URL.
+    for (const element of [frame, el('frame-size')]) {
+      element.style.removeProperty('width');
+      element.style.removeProperty('height');
+    }
+    frame.style.removeProperty('transform');
+    return;
+  }
   const format = formats.find(item => item.id === current.format);
   const available = el('frame-area').clientWidth;
   if (!available || !format) return;
@@ -140,6 +166,11 @@ function syncDocumentLinks() {
 }
 
 function showPassage(hash) {
+  if (!docs.getClientRects().length) {
+    pendingPassage = hash;
+    return;
+  }
+  pendingPassage = undefined;
   docs.scrollTop = 0;
   if (!hash) return;
   let id;
@@ -150,6 +181,10 @@ function showPassage(hash) {
   } else {
     el('status').textContent = 'The referenced passage was not found in this document.';
   }
+}
+
+function revealPendingPassage() {
+  if (pendingPassage !== undefined) showPassage(pendingPassage);
 }
 
 async function openDocument(path) {
@@ -203,6 +238,7 @@ function render(enterScenario = false) {
   el('overview').hidden = result.kind !== 'overview';
   el('unavailable').hidden = result.kind === 'overview' || valid;
   el('review').hidden = !valid;
+  mobileReview.update(valid);
   el('screen').value = current?.screen ?? '';
   el('share-fallback').hidden = true;
   clearTimeout(copyReset);
@@ -264,7 +300,10 @@ document.addEventListener('click', event => {
   } else if (current && anchor.hasAttribute('data-prototype-link')) {
     event.preventDefault();
     const next = prototypeSelection(project, anchor.dataset.prototypeLink, current);
-    if (next) choose(next);
+    if (next) {
+      choose(next);
+      mobileReview.close();
+    }
   }
 });
 

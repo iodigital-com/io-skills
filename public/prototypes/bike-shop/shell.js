@@ -5,6 +5,7 @@ import {
   previewHref, prototypeSelection,
 } from './navigation.js';
 import { loadDocument } from './documents.js';
+import { createMobileReview } from './mobile-review.js';
 
 const el = (id) => document.getElementById(id);
 const review = el('review-workspace');
@@ -24,6 +25,25 @@ let frame = el('preview');
 let pinnedDocument;
 let pendingDocument;
 let copyReset;
+let deferredPassage;
+
+const mobileReview = createMobileReview({
+  parts: [
+    [el('screen'), el('mobile-screen-field')],
+    [el('format'), el('mobile-format-field')],
+    [document.querySelector('.review-aside'), el('mobile-review-content')],
+    [el('overview-link'), el('mobile-review-links')],
+    [el('tutorial-link'), el('mobile-review-links')],
+    [el('language-link'), el('mobile-review-links')],
+    [el('copy-link'), el('mobile-review-share')],
+    [el('share-fallback'), el('mobile-review-share')],
+  ],
+  onLayout: () => {
+    fitPreview();
+    revealDeferredPassage();
+  },
+  onOpen: revealDeferredPassage,
+});
 
 function pretty(id) {
   return copy.labels[id] ?? id;
@@ -131,6 +151,12 @@ function choose(selection) {
 
 function fitPreview() {
   if (!current) return;
+  if (mobileReview.active) {
+    frame.style.width = frame.style.height = '100%';
+    frame.style.transform = 'none';
+    el('frame-size').style.width = el('frame-size').style.height = '100%';
+    return;
+  }
   const format = formats.find(item => item.id === current.format);
   const available = el('frame-area').clientWidth;
   if (!available || !format) return;
@@ -188,6 +214,12 @@ function syncDocumentLinks() {
 }
 
 function showPassage(hash) {
+  // A closed dialog has no layout. Align the heading once its scroll container is visible.
+  if (!docs.clientHeight) {
+    deferredPassage = hash;
+    return;
+  }
+  deferredPassage = undefined;
   docs.scrollTop = 0;
   if (!hash) return;
   let id;
@@ -198,6 +230,10 @@ function showPassage(hash) {
   } else {
     el('status').textContent = copy.missingHeading;
   }
+}
+
+function revealDeferredPassage() {
+  if (deferredPassage !== undefined && docs.clientHeight) showPassage(deferredPassage);
 }
 
 function focusPanel(headingId) {
@@ -287,6 +323,7 @@ function render(revealDocument = false) {
   el('overview').hidden = result.kind !== 'overview';
   el('unavailable').hidden = result.kind === 'overview' || valid;
   review.hidden = !valid;
+  mobileReview.update(valid);
   el('screen').value = current?.screen ?? '';
   el('share-fallback').hidden = true;
   clearTimeout(copyReset);
@@ -328,6 +365,7 @@ function render(revealDocument = false) {
   }
   // The design follows the screen. Keep the FA's reading position until its link is chosen again.
   const contentLanguage = type === 'fa' || type === 'output' ? language : 'en';
+  if (revealDocument && mobileReview.active) mobileReview.open();
   if (revealDocument || !previous || activeDocumentType !== type || activeDocumentLanguage !== contentLanguage
       || (type === 'design' && previous.screen !== current.screen) || (type === 'output' && activeExample !== example)) {
     openDocument(paths[type], contentLanguage, example);
@@ -343,7 +381,7 @@ function render(revealDocument = false) {
 setBranding();
 makeOverview();
 addDocumentLinks(el('review-documents'));
-el('controls').open = matchMedia('(min-width: 841px)').matches;
+el('controls').open = !matchMedia('(min-width: 768px) and (max-width: 840px)').matches;
 options('screen', [['', copy.quickPick], ...screens.map(screen => [screen.id, screen.label])], '');
 el('screen').options[0].disabled = true;
 el('screen').addEventListener('change', event => {
@@ -386,12 +424,17 @@ document.addEventListener('click', event => {
     const next = prototypeSelection(project, anchor.dataset.prototypeLink, current);
     if (next) {
       choose(next);
-      if (matchMedia('(max-width: 840px)').matches) focusPanel('preview-heading');
+      if (mobileReview.active) mobileReview.close();
+      else if (matchMedia('(max-width: 840px)').matches) focusPanel('preview-heading');
     }
   }
 });
 
-window.addEventListener('popstate', () => render());
+window.addEventListener('popstate', () => {
+  const docRequested = new URL(location.href).searchParams.has('doc');
+  if (!docRequested && mobileReview.active) mobileReview.close();
+  render(docRequested);
+});
 window.addEventListener('message', event => {
   if (!current || event.source !== frame.contentWindow || !frame.src) return;
   if (event.origin !== new URL(frame.src).origin) return;

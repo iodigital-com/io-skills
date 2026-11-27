@@ -38,4 +38,5 @@ A runnable, project-owned prototype with its project's components and data, a fe
 - [ ] The quick picker retains a supported combination. An unsupported switch shows the destination's configured starting situation.
 - [ ] Persona and state controls expose implemented combinations. A format switch preserves the situation and any ongoing interaction.
 - [ ] The FA stays at the same passage during navigation. Opening the current explanation uses the scenario passage, then the screen default.
+- [ ] On a phone, test the project at the device's actual width and use **Prototype** to access settings and documents. Close and reopen the panel while editing. On desktop, widen the document with both the pointer and keyboard and check that the same preview stays active.
 - [ ] A copied link restores the screen, record, persona, state, format and active scenario in a fresh session. Test two records with the same status and two scenarios with different FA passages on one screen.

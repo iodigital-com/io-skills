@@ -1,0 +1,33 @@
+.review-splitter { display: none; }
+
+@media (width > 840px) {
+  body:not(.mobile-review-active) .review-grid[data-resizable] {
+    grid-template-columns: minmax(0, 1fr) 24px var(--review-document-width, 30%);
+    column-gap: 0;
+  }
+  body:not(.mobile-review-active) .review-grid[data-resizable] > .review-splitter {
+    display: block;
+    align-self: stretch;
+    position: relative;
+    color: var(--muted);
+    cursor: col-resize;
+    touch-action: none;
+    -webkit-user-select: none;
+    user-select: none;
+  }
+  .review-splitter::before, .review-splitter::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 3px;
+    background: currentColor;
+  }
+  .review-splitter::before { inset-block: 0; width: 1px; opacity: .22; }
+  .review-splitter::after { top: min(45%, 12rem); width: 4px; height: 32px; }
+  .review-splitter:hover, .review-splitter:focus-visible, .review-grid.is-resizing > .review-splitter {
+    color: var(--accent, var(--amber, currentColor));
+  }
+  .review-grid.is-resizing { cursor: col-resize; -webkit-user-select: none; user-select: none; }
+  .review-grid.is-resizing iframe { pointer-events: none; }
+}
